@@ -17,7 +17,7 @@ export async function onRequestPost(context) {
     if (!email || !email.includes('@')) {
         return json({ error: 'Invalid email' }, 400);
     }
-
+ 
     if (!phone || !/\d{7,}/.test(phone)) {
         return json({ error: 'Invalid phone' }, 400);
     }
