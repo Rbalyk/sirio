@@ -41,7 +41,7 @@
   function initLang() {
     document.querySelectorAll('.nav-lang button, .lang-switcher button').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        window.location.pathname = btn.dataset.lang === 'ua' ? '/ua' : '/';
+        window.location.pathname = btn.dataset.lang === 'ua' ? '/ua/' : '/';
       });
     });
   }
