@@ -98,12 +98,15 @@
       btn.textContent = '...';
       btn.disabled = true;
 
+        console.log('before request')
+
       fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: email, phone: phoneVal })
       })
         .then(function (res) {
+            console.log('Response status:', res.status);
           if (!res.ok) throw new Error('server error');
           btn.textContent = '✓ Sent!';
           inp.value   = '';
@@ -114,6 +117,7 @@
           }, 3000);
         })
         .catch(function () {
+            console.error('Fetch error:', err);
           btn.textContent = 'Error, try again';
           btn.disabled = false;
           setTimeout(function () { btn.textContent = originalText; }, 3000);
