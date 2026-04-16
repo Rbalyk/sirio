@@ -1,6 +1,5 @@
 const TO_EMAIL = 'rbalik341@gmail.com';
-// const FROM_EMAIL = 'Landing <noreply@sirio.agency>';
-const FROM_EMAIL = 'Landing <onboarding@resend.dev>';
+const FROM_EMAIL = 'Landing <noreply@sirio.agency>';
 
 export async function onRequestPost(context) {
     const { request, env } = context;
@@ -45,9 +44,7 @@ export async function onRequestPost(context) {
         return json({ error: 'Failed to send email', details: text }, 500);
     }
 
-    if (body.website) {
-        return json({ ok: true, message: 'Sent successfully' }, 200);
-    }
+    return json({ ok: true, message: 'Sent successfully' }, 200);
 }
 
 function json(data, status = 200) {

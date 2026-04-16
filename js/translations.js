@@ -1,5 +1,5 @@
 // translations.js
-const i18n = {
+window.i18n = {
   en: {
     meta: {
       title: 'Sirio — AI Automation Agency',
@@ -248,5 +248,3 @@ const i18n = {
     }
   }
 };
-
-window.i18n = i18n;
