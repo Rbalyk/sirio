@@ -163,6 +163,100 @@ window.i18n = {
           cookies: 'Cookie Policy'
         }
       }
+    },
+
+    pages: {
+      contact: {
+        breadcrumbCurrent: 'Contact Us',
+        h1: 'Book Your Free AI Automation Audit',
+        sub: '30-minute call. We will look at your processes and tell you honestly what AI can — and cannot — do for your business. No pitch, no pressure.'
+      },
+      aiIntegrations: {
+        breadcrumbCurrent: 'AI Integrations',
+        hero: {
+          chip: 'Sirio · AI Integration Services',
+          h1: 'AI Integration Services for Mid-Market Companies',
+          sub: 'LLM, chatbots, workflow automation, and AI agents — integrated with your existing CRM, messaging, and data. Production-grade systems in 4–12 weeks, not 6 months. Fixed price, measurable ROI, built for teams of 50–500.',
+          ctaPrimary: 'Book Free Audit',
+          ctaSecondary: 'See Case Studies',
+          trust1: 'Production in 4–12 weeks',
+          trust2: 'Full-stack, not just chatbots',
+          trust3: 'Works with your stack',
+          trust4: 'EU-based, GDPR-ready'
+        },
+        problem: {
+          label: 'The reality',
+          title: 'Why Mid-Market AI Integration Fails',
+          sub: 'Most mid-market AI projects stall not because models are weak, but because integration is underestimated. Three patterns we see repeatedly:',
+          items: [
+            { title: 'Stuck in pilot purgatory', desc: 'A flashy demo is built, leadership nods, then nothing reaches production because no one wired it to the CRM, the auth layer, or the data pipeline that actually feeds the business.' },
+            { title: 'Point tools that do not talk', desc: 'One team runs a Slack bot, another runs a Zapier flow, a third tests RAG in a notebook. Duplicated effort, inconsistent outputs, no shared observability or cost control.' },
+            { title: 'Scope drift and surprise invoices', desc: 'Hourly-billed agencies stretch a 6-week build into 6 months. We scope week-by-week upfront and commit to a fixed price.' }
+          ]
+        },
+        services: {
+          label: 'What we integrate',
+          title: 'Full-Stack AI Integration, Not Just Chatbots',
+          sub: 'Six capability areas. Most engagements combine two or three.',
+          items: [
+            { tag: 'Core',           name: 'LLM Integration',              desc: 'OpenAI, Anthropic Claude, and Google Gemini wired into your product or internal tools. Model selection benchmarked on your data, prompt engineering, structured outputs, cost controls, and fallback routing.' },
+            { tag: 'Most requested', name: 'AI Chatbots & Assistants',     desc: 'Production chatbots for Slack, WhatsApp, Telegram, Microsoft Teams, and Discord. Multi-turn memory, tool calling, escalation to humans, and full conversation logs. Deployed behind your auth, not a third-party SaaS.' },
+            { tag: 'Automation',     name: 'AI Workflow Automation',       desc: 'When Zapier or Make hit their ceiling, we build the next layer: n8n, custom webhooks, queue-backed workers, and stateful flows. Errors retry, long tasks run async, every step is logged.' },
+            { tag: 'Advanced',       name: 'AI Agents & Custom Solutions', desc: 'Autonomous agents that plan, call tools, and complete multi-step tasks — triage tickets, generate proposals, reconcile invoices. Human-in-the-loop gates at every decision that matters.' },
+            { tag: 'CRM',            name: 'CRM AI Integration',           desc: 'AI inside HubSpot, Salesforce, and Pipedrive — lead scoring, intent detection, call summaries, next-best-action suggestions. Writes back to your CRM so your reps see AI output where they already work.' },
+            { tag: 'Knowledge',      name: 'RAG & Knowledge Systems',      desc: 'Retrieval-augmented generation over your internal docs, tickets, and wikis. Pinecone, Weaviate, or Supabase pgvector — chosen by data volume and compliance. Reranking, citation, freshness controls included.' }
+          ]
+        },
+        tools: {
+          label: 'Stack breakdown',
+          title: 'How We Use Each Tool',
+          sub: 'Short notes on what each platform does for us and when we reach for it.',
+          items: [
+            { cat: 'AI models',  desc: 'GPT-4o for tool calling, structured outputs, and the widest SDK ecosystem. Our default LLM when an agent needs reliable function calls and fast iteration.' },
+            { cat: 'AI models',  desc: 'Claude for long-context reasoning, careful refusals, and multi-step analysis. First choice for document-heavy workflows, contract review, and compliance-sensitive outputs.' },
+            { cat: 'AI models',  desc: 'Gemini when the use case sits close to Google Workspace — Docs, Sheets, Gmail. Strong native multimodal handling for image and PDF inputs.' },
+            { cat: 'Messaging',  desc: 'Where internal AI assistants live: triage bots, knowledge search over Notion or Confluence, and alert summarization. Deployed via the Events API inside your workspace, not a third-party SaaS.' },
+            { cat: 'Messaging',  desc: 'Customer-facing chatbots via the WhatsApp Cloud API. We handle template approval, phone-number onboarding, opt-in flows, and conversation analytics.' },
+            { cat: 'Messaging',  desc: 'Fast, simple bots for booking, notifications, and FAQ triage. Common in EU and Ukraine SMB deployments where Telegram is the default messenger.' },
+            { cat: 'CRM',        desc: 'AI inside HubSpot for lead scoring, call summaries, next-best-action, and auto-drafted follow-ups written back to contact records. Native app or API integration.' },
+            { cat: 'CRM',        desc: 'Enterprise AI integration with Apex callouts, Flow automation, and Service Cloud bots. A tight fit for teams already on Sales or Service Cloud.' },
+            { cat: 'Automation', desc: 'Fast prototyping across 6,000+ apps. We use it for pilots and lightweight workflows before moving complex logic to n8n or custom code.' },
+            { cat: 'Automation', desc: 'Visual scenario builder with better state handling and branching than Zapier. Our pick for data transformations and conditional flows.' },
+            { cat: 'Automation', desc: 'Self-hosted, code-capable, no vendor lock-in. Our default workflow engine when volume grows, custom logic is needed, or data residency matters.' },
+            { cat: 'Vector DB',  desc: 'Managed vector database for production-scale RAG. Low-latency retrieval, metadata filtering, hybrid search, and multi-region replication.' },
+            { cat: 'Vector DB',  desc: 'Open-source with built-in hybrid search and modular vectorizers. Self-host or managed cloud — GDPR-friendly for EU deployments.' },
+            { cat: 'Database',   desc: 'Postgres plus pgvector for teams that want one database for app data and embeddings. Auth, storage, and Edge Functions in the same stack.' },
+            { cat: 'Hosting',    desc: 'Where we deploy AI frontends, dashboards, and Edge Functions for low-latency API routes close to the user. Preview deploys on every pull request.' }
+          ]
+        },
+        useCases: {
+          label: 'In production',
+          title: 'Real-World AI Integrations',
+          sub: 'Anonymized snapshots of what shipped and what it moved.',
+          items: [
+            { industry: 'SaaS · 180 employees',       title: 'Customer support bot on Slack + WhatsApp, tier-1 triage',                metrics: [{ val: '−60%',    lbl: 'response time' },     { val: '72%',   lbl: 'tickets auto-resolved' }] },
+            { industry: 'B2B Sales · 220 employees',  title: 'LLM sales assistant inside HubSpot — lead scoring and call summaries',   metrics: [{ val: '+35%',    lbl: 'lead-to-meeting' },   { val: '8h/wk', lbl: 'saved per rep' }] },
+            { industry: 'Operations · 90 employees',  title: 'Document AI workflow — invoice extraction, routing, and approval',      metrics: [{ val: '−15h/wk', lbl: 'per team' },          { val: '98.2%', lbl: 'field accuracy' }] }
+          ]
+        },
+        faq: {
+          title: 'Frequently Asked Questions',
+          items: [
+            { q: 'How long does AI integration take?',                                  a: 'Most mid-market integrations ship to production in 4–12 weeks. A focused chatbot or a single CRM workflow usually takes 4–6 weeks. Multi-system integrations with agents, RAG, and custom UI extend to 8–12. We scope week-by-week upfront, so the timeline is fixed, not open-ended.' },
+            { q: 'Do you work with our existing CRM?',                                  a: 'Yes. We integrate with HubSpot, Salesforce, Pipedrive, and Zoho natively via their APIs. For less common tools we build adapters. We do not ask clients to migrate CRMs to suit our stack — AI is added to your system of record, not around it.' },
+            { q: 'What is the typical cost range?',                                     a: 'A targeted integration (one chatbot or one workflow) is typically €4,000–12,000. Multi-system builds with agents and RAG range €12,000–40,000. We publish fixed ranges and give a written quote after a 1-hour audit call — no hourly billing, no scope creep surprises.' },
+            { q: 'Can AI replace our customer support team?',                           a: 'No, and we would not recommend trying. AI handles routine tier-1 questions reliably, which frees your team for complex cases where human judgement matters. In practice clients see response time drop 50–70% and CSAT hold steady or improve, because agents spend their time on real problems.' },
+            { q: 'What is the difference between AI integration and AI development?',   a: 'AI development means training a model from scratch — rarely needed for mid-market. AI integration means connecting existing models (OpenAI, Claude, Gemini) to your tools and data, then engineering the prompts, retrieval, and guardrails around them. Integration is where 95% of business value lives.' },
+            { q: 'Which LLMs do you use?',                                              a: 'We pick per use case. Claude for reasoning-heavy tasks and long context. OpenAI for tool use and mature ecosystem. Gemini where Google Workspace data is central. Open-source (Llama, Mistral) when self-hosting is a compliance requirement. We benchmark on your data before committing.' },
+            { q: 'How do you handle data privacy and GDPR?',                            a: 'We are EU-based and GDPR-compliant by default. We prefer vendors with EU data residency (Anthropic EU, Azure OpenAI EU region). For sensitive data we support self-hosted models and on-premise vector stores. DPA and sub-processor lists are provided before kickoff.' },
+            { q: 'Can we start with a small pilot?',                                    a: 'Yes — most engagements start this way. A 2–4 week pilot on one workflow or one channel lets you validate ROI before committing to a full rollout. We quote the pilot fixed, and the learnings feed directly into the Phase 2 plan if you choose to continue.' }
+          ]
+        },
+        finalCta: {
+          title: 'Ready to Integrate AI into Your Business?',
+          sub: 'Book a 30-minute free audit. We will look at your stack, name the 3 integrations with the strongest ROI, and tell you honestly which we can ship — and which you should not buy.'
+        }
+      }
     }
   },
 
@@ -327,6 +421,100 @@ window.i18n = {
           privacy: 'Політика конфіденційності',
           terms: 'Умови використання',
           cookies: 'Cookie політика'
+        }
+      }
+    },
+
+    pages: {
+      contact: {
+        breadcrumbCurrent: 'Контакти',
+        h1: 'Записатись на безкоштовний AI-аудит',
+        sub: '30-хвилинний дзвінок. Подивимось на ваші процеси і чесно скажемо, що AI може — і чого не може — зробити для вашого бізнесу. Без продажу, без тиску.'
+      },
+      aiIntegrations: {
+        breadcrumbCurrent: 'AI-інтеграції',
+        hero: {
+          chip: 'Sirio · AI-інтеграції',
+          h1: 'AI-інтеграції для mid-market компаній',
+          sub: 'LLM, чат-боти, автоматизація workflow і AI-агенти — підключені до вашого CRM, месенджерів і даних. Production-grade системи за 4–12 тижнів, не 6 місяців. Фіксована ціна, вимірюваний ROI, для команд 50–500.',
+          ctaPrimary: 'Безкоштовний аудит',
+          ctaSecondary: 'Переглянути кейси',
+          trust1: 'Production за 4–12 тижнів',
+          trust2: 'Full-stack, не лише боти',
+          trust3: 'Працює з вашим стеком',
+          trust4: 'ЄС, GDPR-ready'
+        },
+        problem: {
+          label: 'Реальність',
+          title: 'Чому AI-інтеграції у mid-market зриваються',
+          sub: 'Більшість mid-market AI-проєктів застрягають не через слабкі моделі, а через недооцінену інтеграцію. Три патерни, які ми бачимо регулярно:',
+          items: [
+            { title: 'Застрягли в «pilot purgatory»',              desc: 'Побудували яскраве демо, керівництво кивнуло, потім — нічого. Тому що ніхто не підключив його до CRM, auth-шару чи pipeline даних, який реально годує бізнес.' },
+            { title: 'Точкові інструменти, що не говорять між собою', desc: 'Одна команда запускає Slack-бот, інша — Zapier-flow, третя тестує RAG у notebook. Дублі, неузгоджені виходи, ні спільної observability, ні контролю витрат.' },
+            { title: 'Scope drift і сюрпризні рахунки',             desc: 'Агенції на погодинній оплаті перетворюють 6-тижневий build на 6 місяців. Ми розписуємо scope по тижнях і фіксуємо ціну.' }
+          ]
+        },
+        services: {
+          label: 'Що інтегруємо',
+          title: 'Full-stack AI-інтеграція, а не лише чат-боти',
+          sub: 'Шість областей компетенції. Більшість проєктів комбінує дві-три.',
+          items: [
+            { tag: 'Core',             name: 'LLM-інтеграція',                      desc: 'OpenAI, Anthropic Claude і Google Gemini підключені до вашого продукту чи внутрішніх інструментів. Benchmark моделей на ваших даних, prompt engineering, structured outputs, cost controls, fallback routing.' },
+            { tag: 'Найбільший попит', name: 'AI-чат-боти та асистенти',            desc: 'Production-боти для Slack, WhatsApp, Telegram, Microsoft Teams і Discord. Multi-turn memory, tool calling, ескалація на людину, повні логи діалогів. Розгортаються за вашою авторизацією, не на стороні SaaS.' },
+            { tag: 'Автоматизація',    name: 'AI Workflow Automation',              desc: 'Коли Zapier або Make упираються в стелю — будуємо наступний шар: n8n, кастомні webhooks, queue-backed воркери, stateful flows. Помилки ретраяться, довгі задачі виконуються асинхронно, кожен крок логується.' },
+            { tag: 'Просунуте',        name: 'AI-агенти та кастомні рішення',       desc: 'Автономні агенти, які планують, викликають tools і виконують multi-step задачі: тріаж тікетів, генерація proposals, звірка інвойсів. Human-in-the-loop на кожному критичному рішенні.' },
+            { tag: 'CRM',              name: 'CRM AI-інтеграція',                   desc: 'AI всередині HubSpot, Salesforce і Pipedrive — lead scoring, intent detection, call summaries, next-best-action. Записує назад у CRM, щоб менеджери бачили AI-output там, де вже працюють.' },
+            { tag: 'Knowledge',        name: 'RAG і knowledge-системи',             desc: 'Retrieval-augmented generation по ваших внутрішніх документах, тікетах і wiki. Pinecone, Weaviate або Supabase pgvector — обираємо за об\'ємом даних і compliance. Reranking, citation, freshness-контроль входять.' }
+          ]
+        },
+        tools: {
+          label: 'Розбір стеку',
+          title: 'Як ми використовуємо кожен інструмент',
+          sub: 'Короткі нотатки про те, що кожна платформа робить для нас і коли ми до неї звертаємось.',
+          items: [
+            { cat: 'AI-моделі',     desc: 'GPT-4o для tool calling, structured outputs і найширшої SDK-екосистеми. Наш дефолтний LLM, коли агенту потрібні надійні function calls і швидка ітерація.' },
+            { cat: 'AI-моделі',     desc: 'Claude для reasoning-задач з довгим контекстом, акуратних відмов і multi-step аналізу. Перший вибір для документно-важких workflows, ревʼю договорів і compliance-чутливих задач.' },
+            { cat: 'AI-моделі',     desc: 'Gemini, коли use-case близький до Google Workspace — Docs, Sheets, Gmail. Сильна нативна multimodal-обробка для зображень і PDF.' },
+            { cat: 'Месенджери',    desc: 'Дім для внутрішніх AI-асистентів: triage-боти, пошук по Notion або Confluence, підсумки алертів. Розгортаємо через Events API у вашому workspace, не на стороні SaaS.' },
+            { cat: 'Месенджери',    desc: 'Клієнтські чат-боти через WhatsApp Cloud API. Беремо на себе template approval, онбординг номера, opt-in потоки і аналітику діалогів.' },
+            { cat: 'Месенджери',    desc: 'Швидкі прості боти для запису, нотифікацій і FAQ-тріажу. Популярний у ЄС і Україні для SMB, де Telegram — дефолтний месенджер.' },
+            { cat: 'CRM',           desc: 'AI всередині HubSpot для lead scoring, call summaries, next-best-action і авто-чернеток фоловапів, записаних у контакт-картку. Нативний додаток або API.' },
+            { cat: 'CRM',           desc: 'Enterprise AI-інтеграція через Apex callouts, Flow automation і Service Cloud bots. Щільна підгонка для команд на Sales або Service Cloud.' },
+            { cat: 'Автоматизація', desc: 'Швидке прототипування на 6 000+ застосунків. Використовуємо для пілотів і легких workflows до міграції складної логіки на n8n або код.' },
+            { cat: 'Автоматизація', desc: 'Візуальний scenario-builder з кращим state-handling і розгалуженнями, ніж Zapier. Наш вибір для data transformations і умовних flows.' },
+            { cat: 'Автоматизація', desc: 'Self-hosted, code-capable, без vendor lock-in. Наш дефолтний workflow-engine, коли росте обʼєм, потрібна кастомна логіка або важлива data residency.' },
+            { cat: 'Vector DB',     desc: 'Managed vector database для production-scale RAG. Низька latency retrieval, metadata filtering, hybrid search і multi-region реплікація.' },
+            { cat: 'Vector DB',     desc: 'Open-source з вбудованим hybrid search і модульними vectorizers. Self-host або managed cloud — GDPR-friendly для ЄС-деплоїв.' },
+            { cat: 'База даних',    desc: 'Postgres плюс pgvector для команд, що хочуть одну базу для app-даних і embeddings. Auth, storage, Edge Functions — в одному стеку.' },
+            { cat: 'Хостинг',       desc: 'Куди деплоїмо AI-фронтенди, дашборди і Edge Functions для low-latency API-роутів близько до користувача. Preview deploys на кожен pull request.' }
+          ]
+        },
+        useCases: {
+          label: 'У продакшні',
+          title: 'Реальні AI-інтеграції',
+          sub: 'Анонімізовані знімки того, що поставлено в роботу і що це зсунуло.',
+          items: [
+            { industry: 'SaaS · 180 співробітників',        title: 'Support-бот у Slack + WhatsApp, tier-1 тріаж',                             metrics: [{ val: '−60%',       lbl: 'response time' },     { val: '72%',   lbl: 'авто-resolved' }] },
+            { industry: 'B2B Sales · 220 співробітників',   title: 'LLM sales-асистент у HubSpot — lead scoring і call summaries',             metrics: [{ val: '+35%',       lbl: 'lead-to-meeting' },   { val: '8 год/тиж', lbl: 'економія на rep' }] },
+            { industry: 'Operations · 90 співробітників',   title: 'Document AI workflow — витягування інвойсів, маршрутизація, апрув',        metrics: [{ val: '−15 год/тиж', lbl: 'на команду' },        { val: '98.2%', lbl: 'точність полів' }] }
+          ]
+        },
+        faq: {
+          title: 'Часті запитання',
+          items: [
+            { q: 'Скільки часу займає AI-інтеграція?',                          a: 'Більшість mid-market інтеграцій виходять у продакшн за 4–12 тижнів. Фокусний чат-бот або один CRM-workflow — 4–6 тижнів. Multi-system інтеграції з агентами, RAG і кастомним UI — 8–12. Таймлайн ми розписуємо по тижнях наперед: він фіксований, не open-ended.' },
+            { q: 'Ви працюєте з нашим наявним CRM?',                            a: 'Так. Нативно інтегруємось з HubSpot, Salesforce, Pipedrive і Zoho через їхні API. Для менш поширених інструментів пишемо адаптери. Ми не просимо клієнтів мігрувати CRM під нас — AI додається до вашої системи, а не навколо неї.' },
+            { q: 'Скільки це зазвичай коштує?',                                 a: 'Точкова інтеграція (один чат-бот або один workflow) — €4 000–12 000. Multi-system з агентами і RAG — €12 000–40 000. Ми публікуємо фіксовані діапазони і даємо письмовий quote після 1-годинного audit-дзвінка. Без погодинної оплати і сюрпризів зі scope.' },
+            { q: 'AI може замінити нашу команду підтримки?',                    a: 'Ні, і ми б не радили. AI надійно обробляє рутинні tier-1 запити, що звільняє команду для складних кейсів, де потрібне людське judgement. На практиці response time падає на 50–70%, а CSAT тримається або росте — бо агенти працюють над реальними проблемами.' },
+            { q: 'Яка різниця між AI-інтеграцією та AI-розробкою?',             a: 'AI-розробка — це тренування моделі з нуля, що для mid-market майже ніколи не потрібно. AI-інтеграція — підключення готових моделей (OpenAI, Claude, Gemini) до ваших інструментів і даних, плюс інженерія промптів, retrieval і guardrails. 95% бізнес-цінності створюється саме в інтеграції.' },
+            { q: 'Які LLM ви використовуєте?',                                  a: 'Вибираємо під задачу. Claude — для складних reasoning-задач і довгого контексту. OpenAI — для tool use і зрілої екосистеми. Gemini — коли центральні дані у Google Workspace. Open-source (Llama, Mistral) — коли compliance вимагає self-hosting. Benchmark на ваших даних перед вибором.' },
+            { q: 'Як ви забезпечуєте приватність даних і GDPR?',                a: 'Ми базовані в ЄС і GDPR-сумісні за замовчуванням. Надаємо перевагу вендорам з EU data residency (Anthropic EU, Azure OpenAI EU region). Для чутливих даних підтримуємо self-hosted моделі і on-prem vector stores. DPA і список sub-processors надаємо до старту.' },
+            { q: 'Чи можна почати з невеликого пілота?',                        a: 'Так — більшість проєктів так і починаються. Пілот на 2–4 тижні на одному workflow або каналі дозволяє перевірити ROI перед повним rollout. Ціну пілота фіксуємо заздалегідь, а висновки переходять у план Фази 2, якщо вирішите продовжувати.' }
+          ]
+        },
+        finalCta: {
+          title: 'Готові інтегрувати AI у ваш бізнес?',
+          sub: 'Запишіться на безкоштовний 30-хвилинний аудит. Подивимось на ваш стек, назвемо 3 інтеграції з найсильнішим ROI і чесно скажемо, які можемо поставити — а яких не варто купувати.'
         }
       }
     }

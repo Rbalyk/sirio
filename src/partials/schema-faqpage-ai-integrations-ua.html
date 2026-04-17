@@ -1,0 +1,72 @@
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Скільки часу займає AI-інтеграція?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Більшість mid-market інтеграцій виходять у продакшн за 4–12 тижнів. Фокусний чат-бот або один CRM-workflow — 4–6 тижнів. Multi-system інтеграції з агентами, RAG і кастомним UI — 8–12. Таймлайн ми розписуємо по тижнях наперед: він фіксований, не open-ended."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ви працюєте з нашим наявним CRM?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Так. Нативно інтегруємось з HubSpot, Salesforce, Pipedrive і Zoho через їхні API. Для менш поширених інструментів пишемо адаптери. Ми не просимо клієнтів мігрувати CRM під нас — AI додається до вашої системи, а не навколо неї."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Скільки це зазвичай коштує?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Точкова інтеграція (один чат-бот або один workflow) — €4 000–12 000. Multi-system з агентами і RAG — €12 000–40 000. Ми публікуємо фіксовані діапазони і даємо письмовий quote після 1-годинного audit-дзвінка. Без погодинної оплати і сюрпризів зі scope."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "AI може замінити нашу команду підтримки?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ні, і ми б не радили. AI надійно обробляє рутинні tier-1 запити, що звільняє команду для складних кейсів, де потрібне людське judgement. На практиці response time падає на 50–70%, а CSAT тримається або росте — бо агенти працюють над реальними проблемами."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Яка різниця між AI-інтеграцією та AI-розробкою?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI-розробка — це тренування моделі з нуля, що для mid-market майже ніколи не потрібно. AI-інтеграція — підключення готових моделей (OpenAI, Claude, Gemini) до ваших інструментів і даних, плюс інженерія промптів, retrieval і guardrails. 95% бізнес-цінності створюється саме в інтеграції."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Які LLM ви використовуєте?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Вибираємо під задачу. Claude — для складних reasoning-задач і довгого контексту. OpenAI — для tool use і зрілої екосистеми. Gemini — коли центральні дані у Google Workspace. Open-source (Llama, Mistral) — коли compliance вимагає self-hosting. Benchmark на ваших даних перед вибором."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Як ви забезпечуєте приватність даних і GDPR?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ми базовані в ЄС і GDPR-сумісні за замовчуванням. Надаємо перевагу вендорам з EU data residency (Anthropic EU, Azure OpenAI EU region). Для чутливих даних підтримуємо self-hosted моделі і on-prem vector stores. DPA і список sub-processors надаємо до старту."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Чи можна почати з невеликого пілота?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Так — більшість проєктів так і починаються. Пілот на 2–4 тижні на одному workflow або каналі дозволяє перевірити ROI перед повним rollout. Ціну пілота фіксуємо заздалегідь, а висновки переходять у план Фази 2, якщо вирішите продовжувати."
+        }
+      }
+    ]
+  }
+  </script>

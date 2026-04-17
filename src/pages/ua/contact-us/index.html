@@ -1,0 +1,180 @@
+@@include('partials/head.html', {
+  "htmlLang": "uk",
+  "title": "Контакти — Записатись на AI-аудит | Sirio",
+  "description": "Запишіться на безкоштовний 30-хвилинний AI-аудит. Подивимось на ваші процеси, назвемо 3 інтеграції з найсильнішим ROI і дамо письмовий план дій.",
+  "canonical": "https://sirio.agency/ua/contact-us/",
+  "ogTitle": "Контакти — Записатись на AI-аудит | Sirio",
+  "ogDescription": "Запишіться на безкоштовний 30-хвилинний AI-аудит. Письмовий план дій, без продажу, без тиску.",
+  "ogUrl": "https://sirio.agency/ua/contact-us/",
+  "ogImageAlt": "Sirio — Контакти",
+  "ogLocale": "uk_UA",
+  "ogLocaleAlternate": "en_US",
+  "twitterTitle": "Контакти — Записатись на AI-аудит | Sirio",
+  "twitterDescription": "Запишіться на безкоштовний 30-хвилинний AI-аудит. Письмовий план дій, без продажу, без тиску.",
+  "twitterImageAlt": "Sirio — Контакти"
+})
+<body>
+  <script>window._lang = 'ua';</script>
+
+@@include('partials/nav.html', {
+  "logoHref": "/ua/",
+  "logoAriaLabel": "Sirio — Головна",
+  "logoAlt": "Sirio — Агенція AI-автоматизації",
+  "langAriaLabel": "Мова",
+  "burgerAriaLabel": "Меню",
+  "enActive": "",
+  "uaActive": "active",
+  "currentPage": "contact",
+  "servicesHref": "/ua/#services",
+  "integrationsHref": "/ua/ai-integrations/",
+  "casesHref": "/ua/#cases",
+  "pricingHref": "/ua/#pricing",
+  "faqHref": "/ua/faq/",
+  "contactHref": "/ua/contact-us/",
+  "navServices": "Послуги",
+  "navIntegrations": "AI-інтеграції",
+  "navCases": "Кейси",
+  "navPricing": "Ціни",
+  "navFaq": "FAQ",
+  "navContact": "Контакти",
+  "navCta": "Безкоштовний аудит"
+})
+
+@@include('partials/breadcrumbs.html', {
+  "breadcrumbAriaLabel": "Breadcrumb",
+  "breadcrumbHomeHref": "/ua/",
+  "breadcrumbHomeLabel": "Головна",
+  "breadcrumbCurrentI18n": "pages.contact.breadcrumbCurrent",
+  "breadcrumbCurrentLabel": "Контакти"
+})
+
+  <!-- ── Contact form ─────────────────────────────────────── -->
+  <section class="cta-band" id="contact" aria-label="Записатись на безкоштовний аудит">
+    <div class="cta-grid"></div>
+    <div class="cta-inner">
+      <h1 data-i18n="pages.contact.h1">Записатись на безкоштовний AI-аудит</h1>
+      <p data-i18n="pages.contact.sub">30-хвилинний дзвінок. Подивимось на ваші процеси і чесно скажемо, що AI може — і чого не може — зробити для вашого бізнесу. Без продажу, без тиску.</p>
+      <form class="cta-form" id="cta-form">
+        <label for="cta-email" class="visually-hidden" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;" data-i18n="cta.email_label">Електронна пошта</label>
+        <input type="email"
+               id="cta-email"
+               name="email"
+               autocomplete="email"
+               required
+               data-i18n-placeholder="cta.placeholder"
+               placeholder="ваш@email.com">
+        <label for="cta-phone" class="visually-hidden" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;" data-i18n="cta.phone_label">Номер телефону</label>
+        <input type="tel"
+               id="cta-phone"
+               name="phone"
+               autocomplete="tel"
+               data-i18n-placeholder="cta.phone_placeholder"
+               placeholder="+380 00 000 0000">
+        <button type="button" class="btn btn-primary" id="cta-submit" data-i18n="cta.btn">Записатись на дзвінок</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── FAQ ─────────────────────────────────────────────── -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 data-i18n="faq.title">Часті запитання:</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq.items[0].q">Чи потрібно мені вміти програмувати?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq.items[0].a">Ні, ми беремо все на себе. Це підхід «під ключ» — ви фокусуєтесь на тому, що вмієте найкраще.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq.items[1].q">Чи можу я впливати на те, що ви будете автоматизувати?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq.items[1].a">Так, під час дзвінка-знайомства ми з'ясовуємо як працює ваш бізнес і як найкраще впровадити AI. Потім ви вирішуєте, як рухатись далі — з нашими рекомендаціями.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq.items[2].q">AI-автоматизація замінить мій відділ продажів?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq.items[2].a">Ні — AI не замінює людей, а підтримує їх, беручи на себе рутинні задачі: скоринг лідів, фоловапи, планування. Це звільняє менеджерів для побудови стосунків і закриття угод.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq.items[3].q">Як AI реально допомагає генерувати більше продажів?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner" data-i18n-html="faq.items[3].a">AI покращує продажі завдяки:<ul><li>Персоналізації комунікацій у масштабі (листи, повідомлення, реклама)</li><li>Миттєвій відповіді лідам (чат-боти, автоматизації)</li><li>Аналізу даних продажів для виявлення найкращих можливостей</li><li>Автоматизації фоловапів — жоден лід не загубиться</li></ul></div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq.items[4].q">AI-автоматизація — це дорого?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq.items[4].a">Не обов'язково. Багато інструментів працюють за підпискою і масштабуються — ви платите лише за те, що використовуєте. У більшості випадків автоматизація окупається за рахунок економії часу, зменшення помилок і зростання конверсій.</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq.items[5].q">Чи може AI інтегруватись з моєю CRM та іншими інструментами?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq.items[5].a">Так — AI-автоматизації працюють з більшістю популярних CRM і платформ: HubSpot, Salesforce, Zoho, Pipedrive, а також з простими інструментами як Google Sheets, Slack і email. Інтеграція зазвичай безшовна через API або платформи автоматизації (Zapier, Make, n8n).</div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq.items[6].q">Як швидко я побачу результати від AI-автоматизації?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12"><line x1="6" y1="1" x2="6" y2="11"/><line x1="1" y1="6" x2="11" y2="6"/></svg></span>
+          </button>
+          <div class="faq-answer"><div class="faq-answer-inner" data-i18n="faq.items[6].a">Залежить від процесу. Деякі автоматизації (як чат-боти або ланцюжки фоловапів) дають результат за дні, а більші системи (повна воронка або аналітика) — за кілька тижнів. Більшість бізнесів помічають зростання ефективності майже відразу.</div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+@@include('partials/footer.html', {
+  "logoAlt": "Sirio — Агенція AI-автоматизації",
+  "footerNote": "AI-автоматизація для МСБ · sirio.agency",
+  "colCompany": "Компанія",
+  "colServices": "Послуги",
+  "colLegal": "Правова інформація",
+  "linkAbout": "Про нас",
+  "linkBlog": "Блог",
+  "linkFaq": "FAQ",
+  "linkContact": "Контакти",
+  "linkIntegrations": "AI-інтеграції",
+  "linkConsulting": "AI-консалтинг",
+  "linkAutomation": "Автоматизація процесів",
+  "linkPrivacy": "Політика конфіденційності",
+  "linkTerms": "Умови використання",
+  "aboutHref": "/ua/about-us/",
+  "blogHref": "/ua/blog/",
+  "faqHref": "/ua/faq/",
+  "contactHref": "/ua/contact-us/",
+  "integrationsHref": "/ua/ai-integrations/",
+  "consultingHref": "/ua/ai-consulting/",
+  "privacyHref": "/ua/privacy-policy/",
+  "termsHref": "/ua/terms/"
+})
+
+  <!-- Page-level structured data -->
+@@include('partials/schema-breadcrumb-contact.html', {
+  "breadcrumbHomeName": "Головна",
+  "breadcrumbHomeUrl": "https://sirio.agency/ua/",
+  "breadcrumbCurrentName": "Контакти",
+  "breadcrumbCurrentUrl": "https://sirio.agency/ua/contact-us/"
+})
+@@include('partials/schema-faqpage-ua.html')
+
+  <script src="/main.min.js"></script>
+</body>
+</html>

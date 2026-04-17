@@ -1,10 +1,11 @@
-const { src, dest, series, watch } = require('gulp');
+const { src, dest, series, parallel, watch } = require('gulp');
 const sass        = require('gulp-sass')(require('sass'));
 const cleanCSS    = require('gulp-clean-css');
 const concat      = require('gulp-concat');
 const terser      = require('gulp-terser');
 const rename      = require('gulp-rename');
 const fileInclude = require('gulp-file-include');
+const browserSync = require('browser-sync').create();
 const fs          = require('fs');
 const path        = require('path');
 
@@ -13,7 +14,8 @@ function styles() {
     .pipe(sass().on('error', sass.logError))
     .pipe(cleanCSS())
     .pipe(rename('style.min.css'))
-    .pipe(dest('.'));
+    .pipe(dest('.'))
+    .pipe(browserSync.stream());
 }
 
 function scripts() {
@@ -74,7 +76,7 @@ function sitemap(cb) {
 
   const urls = all.map(p => {
     const isHome = p.loc === SITE + '/' || p.loc === SITE + '/ua/';
-    const priority = isHome ? (p.loc === SITE + '/' ? '1.0' : '0.9') : '0.7';
+    const priority = isHome ? (p.loc === SITE + '/' ? '1.0' : '0.9') : '0.8';
     const pair = pairFor(p.loc);
     const hasPair = p.loc.startsWith(SITE + '/ua/') ? enLocs.has(pair) : uaLocs.has(pair);
 
@@ -107,15 +109,37 @@ ${urls}
   cb();
 }
 
+function reload(cb) {
+  browserSync.reload();
+  cb();
+}
+
+function serve(cb) {
+  browserSync.init({
+    server: {
+      baseDir: '.',
+      // Serve `/foo/` when URL is `/foo` (mimics Cloudflare Pages behavior)
+      serveStaticOptions: { extensions: ['html'] }
+    },
+    port: 8080,
+    open: false,
+    notify: false,
+    ghostMode: false
+  });
+  cb();
+}
+
 function watchFiles() {
   watch('scss/**/*.scss', styles);
-  watch('js/**/*.js', scripts);
-  watch(['src/**/*.html'], series(html, sitemap));
+  watch('js/**/*.js', series(scripts, reload));
+  watch('src/**/*.html', series(html, sitemap, reload));
 }
 
 exports.styles   = styles;
 exports.scripts  = scripts;
 exports.html     = html;
 exports.sitemap  = sitemap;
+exports.serve    = serve;
 exports.watch    = watchFiles;
 exports.default  = series(styles, scripts, html, sitemap);
+exports.dev      = series(styles, scripts, html, sitemap, parallel(serve, watchFiles));

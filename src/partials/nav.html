@@ -6,17 +6,17 @@
           <img src="/images/sirio-logo-dark.svg" alt="@@logoAlt" width="180" height="56" loading="eager" decoding="async">
         </a>
         <ul class="nav-links">
-          <li><a href="#services" data-i18n="nav.services">@@navServices</a></li>
-          <li><a href="#cases"    data-i18n="nav.cases">@@navCases</a></li>
-          <li><a href="#pricing"  data-i18n="nav.pricing">@@navPricing</a></li>
-          <li><a href="#faq"      data-i18n="nav.faq">@@navFaq</a></li>
+          <li><a href="@@servicesHref" data-i18n="nav.services">@@navServices</a></li>
+          <li@@if (currentPage === 'ai-integrations') { class="active"}><a href="@@integrationsHref" data-i18n="nav.integrations">@@navIntegrations</a></li>
+          <li><a href="@@pricingHref" data-i18n="nav.pricing">@@navPricing</a></li>
+          <li@@if (currentPage === 'faq') { class="active"}><a href="@@faqHref" data-i18n="nav.faq">@@navFaq</a></li>
         </ul>
         <div class="nav-right">
           <div class="nav-lang" role="group" aria-label="@@langAriaLabel">
             <button data-lang="en" class="@@enActive" aria-label="Switch to English" lang="en">EN</button>
             <button data-lang="ua" class="@@uaActive" aria-label="Перемкнути на українську" lang="uk">UA</button>
           </div>
-          <a class="btn btn-primary nav-cta" href="#contact" data-i18n="nav.cta">
+          <a class="btn btn-primary nav-cta" href="@@contactHref" data-i18n="nav.cta">
             @@navCta
           </a>
         </div>
@@ -31,13 +31,13 @@
       <!-- Mobile menu -->
       <div class="nav-mobile" id="nav-mobile">
         <ul class="nav-mobile-links">
-          <li><a href="#services" data-i18n="nav.services">@@navServices</a></li>
-          <li><a href="#cases"    data-i18n="nav.cases">@@navCases</a></li>
-          <li><a href="#pricing"  data-i18n="nav.pricing">@@navPricing</a></li>
-          <li><a href="#faq"      data-i18n="nav.faq">@@navFaq</a></li>
-          <li><a href="#contact"  data-i18n="nav.contact">@@navContact</a></li>
+          <li><a href="@@servicesHref" data-i18n="nav.services">@@navServices</a></li>
+          <li@@if (currentPage === 'ai-integrations') { class="active"}><a href="@@integrationsHref" data-i18n="nav.integrations">@@navIntegrations</a></li>
+          <li><a href="@@pricingHref" data-i18n="nav.pricing">@@navPricing</a></li>
+          <li@@if (currentPage === 'faq') { class="active"}><a href="@@faqHref" data-i18n="nav.faq">@@navFaq</a></li>
+          <li><a href="@@contactHref" data-i18n="nav.contact">@@navContact</a></li>
         </ul>
-        <a class="btn btn-primary nav-mobile-cta" href="#contact" data-i18n="nav.cta">
+        <a class="btn btn-primary nav-mobile-cta" href="@@contactHref" data-i18n="nav.cta">
           @@navCta
         </a>
       </div>
