@@ -414,7 +414,7 @@ h1, h2, h3, h4 {
 
   .section-label {
     font-family: $font-heading;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 700;
     letter-spacing: .12em;
     text-transform: uppercase;
@@ -430,7 +430,7 @@ h1, h2, h3, h4 {
   }
 
   .section-sub {
-    font-size: 15px;
+    font-size: 16px;
     color: $color-muted;
     max-width: 520px;
     margin: 0 auto;
@@ -499,7 +499,7 @@ h1, h2, h3, h4 {
 
   .tag {
     display: inline-block;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 600;
     padding: 2px 10px;
     border-radius: 10px;
@@ -516,28 +516,28 @@ h1, h2, h3, h4 {
   }
 
   h3 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     margin-bottom: 6px;
     letter-spacing: -.01em;
   }
 
   p {
-    font-size: 13px;
+    font-size: 16px;
     color: $color-muted;
     line-height: 1.6;
     margin-bottom: 14px;
   }
 
   .price {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     color: $color-dark;
 
     span + span {
       font-weight: 400;
       color: $color-muted;
-      font-size: 12px;
+      font-size: 14px;
       margin-left: 4px;
     }
   }
@@ -571,7 +571,7 @@ h1, h2, h3, h4 {
   }
 
   h3 {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
     color: $color-dark;
     margin-bottom: 16px;
@@ -593,7 +593,7 @@ h1, h2, h3, h4 {
   .val {
     display: block;
     font-family: $font-heading;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 800;
     color: $color-green;
     letter-spacing: -.02em;
@@ -602,7 +602,7 @@ h1, h2, h3, h4 {
 
   .lbl {
     display: block;
-    font-size: 11px;
+    font-size: 14px;
     color: $color-muted;
     margin-top: 2px;
   }
@@ -627,14 +627,14 @@ h1, h2, h3, h4 {
   &:last-child { border-bottom: none; }
 
   .num {
-    width: 34px;
-    height: 34px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: $font-heading;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 800;
     flex-shrink: 0;
     margin-top: 2px;
@@ -643,21 +643,21 @@ h1, h2, h3, h4 {
   .body { flex: 1; }
 
   h3 {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 600;
     color: $color-dark;
     margin-bottom: 3px;
   }
 
   p {
-    font-size: 13px;
+    font-size: 16px;
     color: $color-muted;
     line-height: 1.55;
   }
 
   .price {
     display: block;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     color: $color-green;
     margin-top: 4px;
@@ -703,7 +703,7 @@ h1, h2, h3, h4 {
   .badge-wrap { min-height: 22px; }
 
   h3 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
   }
 
@@ -717,7 +717,7 @@ h1, h2, h3, h4 {
   }
 
   .cycle {
-    font-size: 12px;
+    font-size: 14px;
     color: $color-muted;
   }
 
@@ -739,13 +739,13 @@ h1, h2, h3, h4 {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 13px;
+    font-size: 16px;
     color: $color-muted;
   }
 
   .dot {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background: #E1F5EE;
     display: flex;
@@ -754,8 +754,8 @@ h1, h2, h3, h4 {
     flex-shrink: 0;
 
     svg {
-      width: 9px;
-      height: 9px;
+      width: 12px;
+      height: 12px;
       stroke: #085041;
       fill: none;
       stroke-width: 1.8;
@@ -765,11 +765,11 @@ h1, h2, h3, h4 {
   }
 
   .note {
-    font-size: 11px;
+    font-size: 14px;
     color: $color-muted;
   }
 
-  > button {
+  > a {
     margin-top: 8px;
     width: 100%;
     justify-content: center;
@@ -820,16 +820,23 @@ h1, h2, h3, h4 {
 
   .cta-form {
     display: flex;
-    gap: 8px;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    button{
+      max-width: fit-content;
+      font-size: 18px;
+      padding: 18px 30px;
+      margin-top: 30px;
+    }
   }
 
   input {
     flex: 1;
     min-width: 220px;
-    padding: 12px 18px;
-    border: 1px solid rgba(#fff, .12);
+    width: 100%;
+    padding: 16px 22px;
+    border: 1px solid rgba(#fff, 0.6);
     border-radius: 28px;
     font-size: 14px;
     background: rgba(#fff, .06);
@@ -838,7 +845,7 @@ h1, h2, h3, h4 {
     outline: none;
     transition: border-color .15s;
 
-    &::placeholder { color: rgba(#fff, .25); }
+    &::placeholder { color: rgba(#fff, .25); font-size: 16px; }
     &:focus { border-color: $color-green; }
   }
 }
