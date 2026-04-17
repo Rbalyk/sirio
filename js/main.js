@@ -28,6 +28,11 @@
       if (val != null) el.textContent = val;
     });
 
+    document.querySelectorAll('[data-i18n-html]').forEach(function (el) {
+      var val = resolve(t, el.dataset.i18nHtml);
+      if (val != null) el.innerHTML = val;
+    });
+
     document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
       var val = resolve(t, el.dataset.i18nPlaceholder);
       if (val != null) el.placeholder = val;
@@ -159,6 +164,31 @@
     return path.startsWith('/ua') ? 'ua' : 'en';
   }
 
+  // ── FAQ accordion ─────────────────────────────────────────
+  function initFaq() {
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var item = btn.closest('.faq-item');
+        var answer = item.querySelector('.faq-answer');
+        var isOpen = item.classList.contains('active');
+
+        // Close all
+        document.querySelectorAll('.faq-item.active').forEach(function (open) {
+          open.classList.remove('active');
+          open.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          open.querySelector('.faq-answer').style.maxHeight = null;
+        });
+
+        // Open clicked (if it wasn't already open)
+        if (!isOpen) {
+          item.classList.add('active');
+          btn.setAttribute('aria-expanded', 'true');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+  }
+
   // ── Boot ─────────────────────────────────────────────────
   document.addEventListener('DOMContentLoaded', function () {
     window._lang = detectLang();
@@ -169,5 +199,6 @@
     initBurger();
     initReveal();
     initForm();
+    initFaq();
   });
 })();

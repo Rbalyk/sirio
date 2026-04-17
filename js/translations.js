@@ -119,6 +119,18 @@ window.i18n = {
         }
       ]
     },
+    faq: {
+      title: 'Frequently asked questions:',
+      items: [
+        { q: 'Do I need to know about how to code?', a: 'No, we take care of everything for you, it\'s a hands-off approach so you can focus on what you\'re good at.' },
+        { q: 'Do I get a say in what you will automate?', a: 'Yes, in the discovery call we find out how your business works and how we can best implement AI. You then decide how you wish for us to proceed, with our advice.' },
+        { q: 'Will AI automation replace my sales team?', a: 'No — AI doesn\'t replace people, it supports them by handling repetitive tasks like lead scoring, follow-ups, and scheduling. This frees up sales reps to focus on building relationships and closing deals.' },
+        { q: 'How does AI actually help generate more sales?', a: 'AI improves sales by:<ul><li>Personalizing outreach at scale (emails, messages, ads)</li><li>Responding instantly to leads (chatbots, automations)</li><li>Analyzing sales data to highlight the best opportunities</li><li>Automating follow-ups so no prospect slips through the cracks</li></ul>' },
+        { q: 'Is AI automation expensive?', a: 'Not necessarily. Many tools are subscription-based and scalable, meaning you pay only for what you need. In most cases, automation pays for itself by saving time, reducing human error, and increasing conversions.' },
+        { q: 'Can AI integrate with my existing CRM and tools?', a: 'Yes — AI automations work with most popular CRMs and platforms like HubSpot, Salesforce, Zoho, Pipedrive, or even simple tools like Google Sheets, Slack, and email. Integration is often seamless through APIs or automation platforms (Zapier, Make, n8n).' },
+        { q: 'How quickly can I see results with AI automation?', a: 'It depends on the process. Some automations (like chatbots or follow-up sequences) can deliver results within days, while larger systems (like full funnel automation or advanced analytics) may take a few weeks. Most businesses notice efficiency gains almost immediately.' }
+      ]
+    },
     footer: {
       note: 'AI Automation Agency · sirio.agency'
     }
@@ -241,6 +253,18 @@ window.i18n = {
           email: 'hello@sirio.agency',
           phone: '+38 032 000 0000'
         }
+      ]
+    },
+    faq: {
+      title: 'Часті запитання:',
+      items: [
+        { q: 'Чи потрібно мені вміти програмувати?', a: 'Ні, ми беремо все на себе. Це підхід «під ключ» — ви фокусуєтесь на тому, що вмієте найкраще.' },
+        { q: 'Чи можу я впливати на те, що ви будете автоматизувати?', a: 'Так, під час дзвінка-знайомства ми з\'ясовуємо як працює ваш бізнес і як найкраще впровадити AI. Потім ви вирішуєте, як рухатись далі — з нашими рекомендаціями.' },
+        { q: 'AI-автоматизація замінить мій відділ продажів?', a: 'Ні — AI не замінює людей, а підтримує їх, беручи на себе рутинні задачі: скоринг лідів, фоловапи, планування. Це звільняє менеджерів для побудови стосунків і закриття угод.' },
+        { q: 'Як AI реально допомагає генерувати більше продажів?', a: 'AI покращує продажі завдяки:<ul><li>Персоналізації комунікацій у масштабі (листи, повідомлення, реклама)</li><li>Миттєвій відповіді лідам (чат-боти, автоматизації)</li><li>Аналізу даних продажів для виявлення найкращих можливостей</li><li>Автоматизації фоловапів — жоден лід не загубиться</li></ul>' },
+        { q: 'AI-автоматизація — це дорого?', a: 'Не обов\'язково. Багато інструментів працюють за підпискою і масштабуються — ви платите лише за те, що використовуєте. У більшості випадків автоматизація окупається за рахунок економії часу, зменшення помилок і зростання конверсій.' },
+        { q: 'Чи може AI інтегруватись з моєю CRM та іншими інструментами?', a: 'Так — AI-автоматизації працюють з більшістю популярних CRM і платформ: HubSpot, Salesforce, Zoho, Pipedrive, а також з простими інструментами як Google Sheets, Slack і email. Інтеграція зазвичай безшовна через API або платформи автоматизації (Zapier, Make, n8n).' },
+        { q: 'Як швидко я побачу результати від AI-автоматизації?', a: 'Залежить від процесу. Деякі автоматизації (як чат-боти або ланцюжки фоловапів) дають результат за дні, а більші системи (повна воронка або аналітика) — за кілька тижнів. Більшість бізнесів помічають зростання ефективності майже відразу.' }
       ]
     },
     footer: {

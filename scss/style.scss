@@ -903,6 +903,109 @@ h1, h2, h3, h4 {
   }
 }
 
+// ── FAQ ─────────────────────────────────────────────────────
+.faq {
+  padding: 80px 0;
+
+  .container {
+    max-width: 760px;
+  }
+
+  h2 {
+    font-family: $font-heading;
+    font-size: clamp(26px, 3.5vw, 38px);
+    font-weight: 800;
+    letter-spacing: -.02em;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+.faq-list {
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid $color-border;
+  overflow: hidden;
+}
+
+.faq-item {
+  border-bottom: 1px solid $color-border;
+
+  &:last-child { border-bottom: none; }
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: $font-heading;
+  font-size: 20px;
+  font-weight: 700;
+  color: $color-dark;
+  text-align: left;
+  line-height: 1.4;
+  gap: 16px;
+  transition: background .15s;
+
+  &:hover { background: rgba($color-green, .04); }
+
+  .faq-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #E1F5EE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: transform .3s ease, background .2s;
+
+    svg {
+      width: 12px;
+      height: 12px;
+      stroke: $color-green-mid;
+      stroke-width: 2;
+      stroke-linecap: round;
+      fill: none;
+      transition: transform .3s ease;
+    }
+  }
+}
+
+.faq-item.active .faq-question .faq-icon {
+  background: $color-green;
+
+  svg {
+    stroke: #fff;
+    transform: rotate(45deg);
+  }
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .35s ease;
+}
+
+.faq-answer-inner {
+  padding: 0 24px 20px;
+  font-size: 14px;
+  color: $color-muted;
+  line-height: 1.65;
+
+  ul {
+    margin: 8px 0 0 16px;
+    list-style: disc;
+
+    li { margin-bottom: 4px; }
+  }
+}
+
 // ── Footer ───────────────────────────────────────────────────
 .footer {
   background: $color-darker;
