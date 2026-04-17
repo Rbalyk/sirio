@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO: designer to replace with a final 1200×630 PNG for reliable rendering across social platforms (some scrapers don't render SVG OG images) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Sirio — AI Automation Agency">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1410"/>
+      <stop offset="55%" stop-color="#11241C"/>
+      <stop offset="100%" stop-color="#1D9E75" stop-opacity="0.55"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.75" cy="0.25" r="0.7">
+      <stop offset="0%" stop-color="#1D9E75" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#1D9E75" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#1D9E75" stroke-opacity="0.08" stroke-width="1">
+    <line x1="0" y1="158" x2="1200" y2="158"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="472" x2="1200" y2="472"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+  </g>
+
+  <!-- Hex logo -->
+  <g transform="translate(110, 225)">
+    <polygon points="104,8 192,56 192,152 104,200 16,152 16,56" fill="#1D9E75"/>
+    <polygon points="104,40 156,70 156,122 104,152 52,122 52,70" fill="none" stroke="#0B1410" stroke-width="10"/>
+    <circle cx="104" cy="96" r="20" fill="#0B1410"/>
+  </g>
+
+  <!-- Brand -->
+  <text x="360" y="270" font-family="Lato, Helvetica, Arial, sans-serif" font-size="110" font-weight="900" fill="#FFFFFF" letter-spacing="-2">Sirio</text>
+  <text x="360" y="340" font-family="Lato, Helvetica, Arial, sans-serif" font-size="40" font-weight="700" fill="#1D9E75">AI Automation Agency</text>
+
+  <!-- Tagline pill -->
+  <g transform="translate(360, 380)">
+    <rect x="0" y="0" width="420" height="52" rx="26" fill="#0B1410" fill-opacity="0.55" stroke="#1D9E75" stroke-opacity="0.5" stroke-width="1"/>
+    <circle cx="26" cy="26" r="6" fill="#1D9E75"/>
+    <text x="48" y="34" font-family="Lato, Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#E6F2EC">AI solutions for your business</text>
+  </g>
+
+  <!-- Bottom domain -->
+  <text x="360" y="500" font-family="Lato, Helvetica, Arial, sans-serif" font-size="26" font-weight="300" fill="#8CB3A2">sirio.agency</text>
+</svg>

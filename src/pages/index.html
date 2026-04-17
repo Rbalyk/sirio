@@ -1,174 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Primary SEO -->
-  <title>Sirio — AI Automation Agency</title>
-  <meta name="description" content="AI automation for small and medium businesses across Europe. Chatbots, process automation, AI content pipelines. From audit to live system in 2–4 weeks. Fixed price, measurable results.">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Sirio Agency">
-  <link rel="canonical" href="https://sirio.agency/">
-  <link rel="alternate" hreflang="x-default" href="https://sirio.agency/">
-  <link rel="alternate" hreflang="en" href="https://sirio.agency/">
-  <link rel="alternate" hreflang="uk" href="https://sirio.agency/ua/">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Sirio Agency">
-  <meta property="og:title" content="Sirio — AI Automation Agency">
-  <meta property="og:description" content="AI automation for small and medium businesses. Chatbots, process automation, AI content. Live in 2–4 weeks, fixed price.">
-  <meta property="og:url" content="https://sirio.agency/">
-  <meta property="og:image" content="https://sirio.agency/images/og-image-1200x630.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="2400">
-  <meta property="og:image:height" content="1260">
-  <meta property="og:image:alt" content="Sirio — AI Automation Agency logo">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:locale:alternate" content="uk_UA">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sirio — AI Automation Agency">
-  <meta name="twitter:description" content="AI automation for SMBs. Chatbots, workflows, content pipelines. Fixed price, 2–4 weeks.">
-  <meta name="twitter:image" content="https://sirio.agency/images/og-image-1200x630.png">
-  <meta name="twitter:image:alt" content="Sirio — AI Automation Agency logo">
-
-  <!-- Geo -->
-  <meta name="geo.region" content="NL">
-  <meta name="geo.placename" content="Eindhoven">
-
-  <!-- Theme -->
-  <meta name="theme-color" content="#0B1410">
-
-  <!-- Favicons & App Icons -->
-  <link rel="icon" type="image/svg+xml" href="/images/sirio-favicon.svg">
-  <link rel="icon" type="image/png" sizes="64x64" href="/images/sirio-favicon.png">
-  <link rel="mask-icon" href="/images/sirio-logo-mono-black.svg" color="#1D9E75">
-  <link rel="apple-touch-icon" href="/images/sirio-icon-512.png">
-  <meta name="apple-mobile-web-app-title" content="Sirio">
-  <meta name="application-name" content="Sirio">
-  <meta name="msapplication-TileColor" content="#1D9E75">
-  <meta name="msapplication-TileImage" content="/images/sirio-icon-512.png">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.min.css">
-
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "@id": "https://sirio.agency/#organization",
-    "name": "Sirio Agency",
-    "alternateName": "Sirio",
-    "description": "AI automation agency for small and medium businesses across Europe. Chatbots, process automation, AI content pipelines. Fixed-price delivery in 2–4 weeks.",
-    "url": "https://sirio.agency/",
-    "logo": "https://sirio.agency/images/sirio-logo-vertical.png",
-    "image": "https://sirio.agency/images/sirio-icon-512.png",
-    "email": "rbalik341@gmail.com",
-    "priceRange": "€300–€4500",
-    "areaServed": [
-      { "@type": "Country", "name": "Netherlands" },
-      { "@type": "Country", "name": "Ukraine" },
-      { "@type": "Place", "name": "European Union" }
-    ],
-    "address": [
-      {
-        "@type": "PostalAddress",
-        "addressLocality": "Eindhoven",
-        "addressCountry": "NL"
-      },
-      {
-        "@type": "PostalAddress",
-        "addressLocality": "Lviv",
-        "addressCountry": "UA"
-      }
-    ],
-    "knowsAbout": [
-      "AI automation",
-      "Chatbots",
-      "Process automation",
-      "AI content generation",
-      "Workflow automation",
-      "n8n",
-      "Make.com",
-      "Zapier"
-    ],
-    "makesOffer": [
-      { "@type": "Offer", "name": "AI Start", "price": "800", "priceCurrency": "EUR" },
-      { "@type": "Offer", "name": "AI Pro",   "price": "2200", "priceCurrency": "EUR" },
-      { "@type": "Offer", "name": "AI Max",   "price": "4500", "priceCurrency": "EUR" }
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "https://sirio.agency/#website",
-    "url": "https://sirio.agency/",
-    "name": "Sirio Agency",
-    "publisher": { "@id": "https://sirio.agency/#organization" },
-    "inLanguage": ["en", "uk"]
-  }
-  </script>
-
-</head>
-
+@@include('partials/head.html', {
+  "htmlLang": "en",
+  "title": "Sirio — AI Automation Agency",
+  "description": "AI automation for small and medium businesses across Europe. Chatbots, process automation, AI content pipelines. From audit to live system in 2–4 weeks. Fixed price, measurable results.",
+  "canonical": "https://sirio.agency/",
+  "ogTitle": "Sirio — AI Automation Agency",
+  "ogDescription": "AI automation for small and medium businesses. Chatbots, process automation, AI content. Live in 2–4 weeks, fixed price.",
+  "ogUrl": "https://sirio.agency/",
+  "ogImageAlt": "Sirio — AI Automation Agency logo",
+  "ogLocale": "en_US",
+  "ogLocaleAlternate": "uk_UA",
+  "twitterTitle": "Sirio — AI Automation Agency",
+  "twitterDescription": "AI automation for SMBs. Chatbots, workflows, content pipelines. Fixed price, 2–4 weeks.",
+  "twitterImageAlt": "Sirio — AI Automation Agency logo"
+})
 <body>
 
-  <!-- ── Nav ─────────────────────────────────────────────── -->
-  <nav class="nav" id="main-nav">
-    <div class="container">
-      <div class="nav-inner">
-        <a class="nav-logo" href="/" aria-label="Sirio Agency — Home">
-          <img src="/images/sirio-logo-dark.svg" alt="Sirio — AI Automation Agency" width="180" height="56" loading="eager" decoding="async">
-        </a>
-        <ul class="nav-links">
-          <li><a href="#services" data-i18n="nav.services">Services</a></li>
-          <li><a href="#cases"    data-i18n="nav.cases">Cases</a></li>
-          <li><a href="#pricing"  data-i18n="nav.pricing">Pricing</a></li>
-          <li><a href="#faq"      data-i18n="nav.faq">FAQ</a></li>
-        </ul>
-        <div class="nav-right">
-          <div class="nav-lang" role="group" aria-label="Language">
-            <button data-lang="en" class="active" aria-label="Switch to English" lang="en">EN</button>
-            <button data-lang="ua" class="" aria-label="Перемкнути на українську" lang="uk">UA</button>
-          </div>
-          <a class="btn btn-primary nav-cta" href="#contact" data-i18n="nav.cta">
-            Free Audit
-          </a>
-        </div>
-        <!-- Burger (mobile only) -->
-        <button class="nav-burger" id="nav-burger" aria-label="Toggle menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-
-      <!-- Mobile menu -->
-      <div class="nav-mobile" id="nav-mobile">
-        <ul class="nav-mobile-links">
-          <li><a href="#services" data-i18n="nav.services">Services</a></li>
-          <li><a href="#cases"    data-i18n="nav.cases">Cases</a></li>
-          <li><a href="#pricing"  data-i18n="nav.pricing">Pricing</a></li>
-          <li><a href="#faq"      data-i18n="nav.faq">FAQ</a></li>
-          <li><a href="#contact"  data-i18n="nav.contact">Contact</a></li>
-        </ul>
-        <a class="btn btn-primary nav-mobile-cta" href="#contact" data-i18n="nav.cta">
-          Free Audit
-        </a>
-      </div>
-    </div>
-  </nav>
-
+@@include('partials/nav.html', {
+  "logoHref": "/",
+  "logoAriaLabel": "Sirio Agency — Home",
+  "logoAlt": "Sirio — AI Automation Agency",
+  "langAriaLabel": "Language",
+  "burgerAriaLabel": "Toggle menu",
+  "enActive": "active",
+  "uaActive": "",
+  "navServices": "Services",
+  "navCases": "Cases",
+  "navPricing": "Pricing",
+  "navFaq": "FAQ",
+  "navContact": "Contact",
+  "navCta": "Free Audit"
+})
 
   <!-- ── Hero ────────────────────────────────────────────── -->
   <section class="hero">
@@ -662,134 +523,38 @@
     </div>
   </section>
 
-  <!-- ── Footer ───────────────────────────────────────────── -->
-  <!-- TODO (Phase 2): /blog/, /about-us/, /faq/, /privacy-policy/, /terms/, /cookies/ pages -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-cols">
-
-        <div class="footer-col footer-brand">
-          <img src="/images/sirio-logo-dark.svg" alt="Sirio — AI Automation Agency" width="180" height="56" loading="lazy" decoding="async">
-          <p class="footer-note" data-i18n="footer.note">AI Automation Agency · sirio.agency</p>
-        </div>
-
-        <!-- TODO (Phase 2): restore footer nav columns when target pages exist -->
-        <!--
-        <div class="footer-col">
-          <h4 class="footer-col-title" data-i18n="footer.columns.company.title">Company</h4>
-          <ul class="footer-links">
-            <li><a href="/about-us/" data-i18n="footer.columns.company.about">About</a></li>
-            <li><a href="/blog/" data-i18n="footer.columns.company.blog">Blog</a></li>
-            <li><a href="/faq/" data-i18n="footer.columns.company.faq">FAQ</a></li>
-            <li><a href="#contact" data-i18n="footer.columns.company.contact">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4 class="footer-col-title" data-i18n="footer.columns.services.title">Services</h4>
-          <ul class="footer-links">
-            <li><a href="/ai-integrations/" data-i18n="footer.columns.services.integrations">AI Integrations</a></li>
-            <li><a href="/ai-consulting/" data-i18n="footer.columns.services.consulting">AI Consulting</a></li>
-            <li><a href="#services" data-i18n="footer.columns.services.automation">Process Automation</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4 class="footer-col-title" data-i18n="footer.columns.legal.title">Legal</h4>
-          <ul class="footer-links">
-            <li><a href="/privacy-policy/" data-i18n="footer.columns.legal.privacy">Privacy Policy</a></li>
-            <li><a href="/terms/" data-i18n="footer.columns.legal.terms">Terms of Service</a></li>
-            <li><a href="/cookies/" data-i18n="footer.columns.legal.cookies">Cookie Policy</a></li>
-          </ul>
-        </div>
-        -->
-
-      </div>
-    </div>
-  </footer>
-
+@@include('partials/footer.html', {
+  "logoAlt": "Sirio — AI Automation Agency",
+  "footerNote": "AI Automation Agency · sirio.agency",
+  "colCompany": "Company",
+  "colServices": "Services",
+  "colLegal": "Legal",
+  "linkAbout": "About",
+  "linkBlog": "Blog",
+  "linkFaq": "FAQ",
+  "linkContact": "Contact",
+  "linkIntegrations": "AI Integrations",
+  "linkConsulting": "AI Consulting",
+  "linkAutomation": "Process Automation",
+  "linkPrivacy": "Privacy Policy",
+  "linkTerms": "Terms of Service",
+  "linkCookies": "Cookie Policy",
+  "aboutHref": "/about-us/",
+  "blogHref": "/blog/",
+  "faqHref": "/faq/",
+  "integrationsHref": "/ai-integrations/",
+  "consultingHref": "/ai-consulting/",
+  "privacyHref": "/privacy-policy/",
+  "termsHref": "/terms/",
+  "cookiesHref": "/cookies/"
+})
 
   <!-- Page-level structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://sirio.agency/"
-      }
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Do I need to know about how to code?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No, we take care of everything for you, it's a hands-off approach so you can focus on what you're good at."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I get a say in what you will automate?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, in the discovery call we find out how your business works and how we can best implement AI. You then decide how you wish for us to proceed, with our advice."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Will AI automation replace my sales team?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No — AI doesn't replace people, it supports them by handling repetitive tasks like lead scoring, follow-ups, and scheduling. This frees up sales reps to focus on building relationships and closing deals."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does AI actually help generate more sales?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "AI improves sales by personalizing outreach at scale (emails, messages, ads), responding instantly to leads (chatbots, automations), analyzing sales data to highlight the best opportunities, and automating follow-ups so no prospect slips through the cracks."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is AI automation expensive?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Not necessarily. Many tools are subscription-based and scalable, meaning you pay only for what you need. In most cases, automation pays for itself by saving time, reducing human error, and increasing conversions."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can AI integrate with my existing CRM and tools?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes — AI automations work with most popular CRMs and platforms like HubSpot, Salesforce, Zoho, Pipedrive, or even simple tools like Google Sheets, Slack, and email. Integration is often seamless through APIs or automation platforms (Zapier, Make, n8n)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How quickly can I see results with AI automation?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "It depends on the process. Some automations (like chatbots or follow-up sequences) can deliver results within days, while larger systems (like full funnel automation or advanced analytics) may take a few weeks. Most businesses notice efficiency gains almost immediately."
-        }
-      }
-    ]
-  }
-  </script>
-
+@@include('partials/schema-breadcrumb-home.html', {
+  "breadcrumbHome": "Home",
+  "breadcrumbUrl": "https://sirio.agency/"
+})
+@@include('partials/schema-faqpage-en.html')
 
   <script src="/main.min.js"></script>
 </body>

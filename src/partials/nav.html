@@ -1,0 +1,45 @@
+  <!-- ── Nav ─────────────────────────────────────────────── -->
+  <nav class="nav" id="main-nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a class="nav-logo" href="@@logoHref" aria-label="@@logoAriaLabel">
+          <img src="/images/sirio-logo-dark.svg" alt="@@logoAlt" width="180" height="56" loading="eager" decoding="async">
+        </a>
+        <ul class="nav-links">
+          <li><a href="#services" data-i18n="nav.services">@@navServices</a></li>
+          <li><a href="#cases"    data-i18n="nav.cases">@@navCases</a></li>
+          <li><a href="#pricing"  data-i18n="nav.pricing">@@navPricing</a></li>
+          <li><a href="#faq"      data-i18n="nav.faq">@@navFaq</a></li>
+        </ul>
+        <div class="nav-right">
+          <div class="nav-lang" role="group" aria-label="@@langAriaLabel">
+            <button data-lang="en" class="@@enActive" aria-label="Switch to English" lang="en">EN</button>
+            <button data-lang="ua" class="@@uaActive" aria-label="Перемкнути на українську" lang="uk">UA</button>
+          </div>
+          <a class="btn btn-primary nav-cta" href="#contact" data-i18n="nav.cta">
+            @@navCta
+          </a>
+        </div>
+        <!-- Burger (mobile only) -->
+        <button class="nav-burger" id="nav-burger" aria-label="@@burgerAriaLabel" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="nav-mobile" id="nav-mobile">
+        <ul class="nav-mobile-links">
+          <li><a href="#services" data-i18n="nav.services">@@navServices</a></li>
+          <li><a href="#cases"    data-i18n="nav.cases">@@navCases</a></li>
+          <li><a href="#pricing"  data-i18n="nav.pricing">@@navPricing</a></li>
+          <li><a href="#faq"      data-i18n="nav.faq">@@navFaq</a></li>
+          <li><a href="#contact"  data-i18n="nav.contact">@@navContact</a></li>
+        </ul>
+        <a class="btn btn-primary nav-mobile-cta" href="#contact" data-i18n="nav.cta">
+          @@navCta
+        </a>
+      </div>
+    </div>
+  </nav>

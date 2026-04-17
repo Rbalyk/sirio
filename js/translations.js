@@ -9,8 +9,17 @@ window.i18n = {
       services: 'Services',
       cases: 'Cases',
       pricing: 'Pricing',
+      faq: 'FAQ',
       contact: 'Contact',
-      cta: 'Free Audit'
+      cta: 'Free Audit',
+      // Stubs for Phase 2 pages (not used in Phase 1 nav, only footer)
+      about: 'About',
+      blog: 'Blog',
+      integrations: 'AI Integrations',
+      consulting: 'AI Consulting'
+    },
+    breadcrumb: {
+      home: 'Home'
     },
     hero: {
       chip: 'Sirio · AI Automation Agency',
@@ -132,7 +141,28 @@ window.i18n = {
       ]
     },
     footer: {
-      note: 'AI Automation Agency · sirio.agency'
+      note: 'AI Automation Agency · sirio.agency',
+      columns: {
+        company: {
+          title: 'Company',
+          about: 'About',
+          blog: 'Blog',
+          faq: 'FAQ',
+          contact: 'Contact'
+        },
+        services: {
+          title: 'Services',
+          integrations: 'AI Integrations',
+          consulting: 'AI Consulting',
+          automation: 'Process Automation'
+        },
+        legal: {
+          title: 'Legal',
+          privacy: 'Privacy Policy',
+          terms: 'Terms of Service',
+          cookies: 'Cookie Policy'
+        }
+      }
     }
   },
 
@@ -145,8 +175,17 @@ window.i18n = {
       services: 'Послуги',
       cases: 'Кейси',
       pricing: 'Ціни',
+      faq: 'FAQ',
       contact: 'Контакти',
-      cta: 'Безкоштовний аудит'
+      cta: 'Безкоштовний аудит',
+      // Stubs for Phase 2 pages (not used in Phase 1 nav, only footer)
+      about: 'Про нас',
+      blog: 'Блог',
+      integrations: 'AI-інтеграції',
+      consulting: 'AI-консалтинг'
+    },
+    breadcrumb: {
+      home: 'Головна'
     },
     hero: {
       chip: 'Sirio · AI-автоматизація для бізнесу',
@@ -268,7 +307,28 @@ window.i18n = {
       ]
     },
     footer: {
-      note: 'AI-автоматизація для МСБ · sirio.agency'
+      note: 'AI-автоматизація для МСБ · sirio.agency',
+      columns: {
+        company: {
+          title: 'Компанія',
+          about: 'Про нас',
+          blog: 'Блог',
+          faq: 'FAQ',
+          contact: 'Контакти'
+        },
+        services: {
+          title: 'Послуги',
+          integrations: 'AI-інтеграції',
+          consulting: 'AI-консалтинг',
+          automation: 'Автоматизація процесів'
+        },
+        legal: {
+          title: 'Правова інформація',
+          privacy: 'Політика конфіденційності',
+          terms: 'Умови використання',
+          cookies: 'Cookie політика'
+        }
+      }
     }
   }
 };
