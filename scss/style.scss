@@ -257,6 +257,8 @@ h1, h2, h3, h4 {
   padding: 96px 0 80px;
   overflow: hidden;
   position: relative;
+  border-radius: 60px;
+  margin: 16px;
 
   .hero-grid {
     position: absolute;
@@ -399,7 +401,11 @@ h1, h2, h3, h4 {
 .section {
   padding: 80px 0;
 
-  &.alt { background: #fff; }
+  &.alt { 
+    background: #fff;
+    border-radius: 60px;
+    margin: 0 16px;
+   }
 
   .section-header {
     text-align: center;
@@ -433,6 +439,9 @@ h1, h2, h3, h4 {
 }
 
 // ── Services ─────────────────────────────────────────────────
+#services{
+  margin-top: 30px;
+}
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -774,6 +783,8 @@ h1, h2, h3, h4 {
   text-align: center;
   position: relative;
   overflow: hidden;
+  border-radius: 60px;
+  margin: 0 16px;
 
   .cta-grid {
     position: absolute;
