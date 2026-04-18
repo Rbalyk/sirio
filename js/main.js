@@ -77,15 +77,17 @@
 
   // ── CTA form ─────────────────────────────────────────────
   function initForm() {
-    var btn   = document.getElementById('cta-submit');
-    var inp   = document.getElementById('cta-email');
-    var phone = document.getElementById('cta-phone');
+    var btn     = document.getElementById('cta-submit');
+    var inp     = document.getElementById('cta-email');
+    var phone   = document.getElementById('cta-phone');
+    var message = document.getElementById('cta-message');
     if (!btn || !inp || !phone) return;
 
     btn.addEventListener('click', function () {
-      var email    = inp.value.trim();
-      var phoneVal = phone.value.trim();
-      var valid    = true;
+      var email      = inp.value.trim();
+      var phoneVal   = phone.value.trim();
+      var messageVal = message ? message.value.trim() : '';
+      var valid      = true;
 
       if (!email || !email.includes('@')) {
         inp.style.borderColor = '#E24B4A';
@@ -103,26 +105,24 @@
       btn.textContent = '...';
       btn.disabled = true;
 
-        console.log('before request')
-
       fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email, phone: phoneVal })
+        body: JSON.stringify({ email: email, phone: phoneVal, message: messageVal })
       })
         .then(function (res) {
-            console.log('Response status:', res.status);
           if (!res.ok) throw new Error('server error');
           btn.textContent = '✓ Sent!';
           inp.value   = '';
           phone.value = '';
+          if (message) message.value = '';
           setTimeout(function () {
             btn.textContent = originalText;
             btn.disabled = false;
           }, 3000);
         })
-        .catch(function () {
-            console.error('Fetch error:', err);
+        .catch(function (err) {
+          console.error('Fetch error:', err);
           btn.textContent = 'Error, try again';
           btn.disabled = false;
           setTimeout(function () { btn.textContent = originalText; }, 3000);

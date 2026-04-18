@@ -554,7 +554,13 @@
                name="phone"
                autocomplete="tel"
                data-i18n-placeholder="cta.phone_placeholder"
-               placeholder="+380 00 000 0000">
+               placeholder="+380 00 000 0000">        <label for="cta-message" class="visually-hidden" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;" data-i18n="cta.message_label">Повідомлення</label>
+        <textarea id="cta-message"
+                  name="message"
+                  rows="4"
+                  data-i18n-placeholder="cta.message_placeholder"
+                  placeholder="Чим ми можеш вам допомогти?"></textarea>
+
         <button type="button" class="btn btn-primary" id="cta-submit" data-i18n="cta.btn">Записатись на дзвінок</button>
       </form>
     </div>

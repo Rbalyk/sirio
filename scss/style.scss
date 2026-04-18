@@ -831,7 +831,8 @@ h1, h2, h3, h4 {
     }
   }
 
-  input {
+  input,
+  textarea {
     flex: 1;
     min-width: 220px;
     width: 100%;
@@ -847,6 +848,13 @@ h1, h2, h3, h4 {
 
     &::placeholder { color: rgba(#fff, .25); font-size: 16px; }
     &:focus { border-color: $color-green; }
+  }
+
+  textarea {
+    border-radius: 18px;
+    resize: vertical;
+    min-height: 112px;
+    line-height: 1.5;
   }
 }
 

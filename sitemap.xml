@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://sirio.agency/ai-integrations/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sirio.agency/ai-integrations/"/>
@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://sirio.agency/contact-us/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sirio.agency/contact-us/"/>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://sirio.agency/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sirio.agency/"/>
@@ -41,14 +41,14 @@
     <loc>https://sirio.agency/privacy-policy/</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sirio.agency/privacy-policy/"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://sirio.agency/ua/privacy-policy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sirio.agency/privacy-policy/"/>
   </url>
   <url>
     <loc>https://sirio.agency/ua/ai-integrations/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sirio.agency/ai-integrations/"/>
@@ -57,7 +57,7 @@
   </url>
   <url>
     <loc>https://sirio.agency/ua/contact-us/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sirio.agency/contact-us/"/>
@@ -75,7 +75,7 @@
   </url>
   <url>
     <loc>https://sirio.agency/ua/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sirio.agency/"/>
@@ -86,7 +86,7 @@
     <loc>https://sirio.agency/ua/privacy-policy/</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://sirio.agency/privacy-policy/"/>
     <xhtml:link rel="alternate" hreflang="uk" href="https://sirio.agency/ua/privacy-policy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://sirio.agency/privacy-policy/"/>

@@ -11,16 +11,21 @@ export async function onRequestPost(context) {
         return json({ error: 'Invalid JSON' }, 400);
     }
 
-    const email = (body.email || '').trim();
-    const phone = (body.phone || '').trim();
+    const email   = (body.email || '').trim();
+    const phone   = (body.phone || '').trim();
+    const message = (body.message || '').trim().slice(0, 5000); // cap length
 
     if (!email || !email.includes('@')) {
         return json({ error: 'Invalid email' }, 400);
     }
- 
+
     if (!phone || !/\d{7,}/.test(phone)) {
         return json({ error: 'Invalid phone' }, 400);
     }
+
+    const messageHtml = message
+        ? `<p><strong>Message:</strong></p><p>${escapeHtml(message).replace(/\n/g, '<br>')}</p>`
+        : '';
 
     const res = await fetch('https://api.resend.com/emails', {
         method: 'POST',
@@ -35,6 +40,7 @@ export async function onRequestPost(context) {
             html: `
         <p><strong>Email:</strong> ${escapeHtml(email)}</p>
         <p><strong>Phone:</strong> ${escapeHtml(phone)}</p>
+        ${messageHtml}
       `,
         }),
     });

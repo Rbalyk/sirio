@@ -102,8 +102,10 @@ window.i18n = {
       sub: 'Book a free 30-minute call. We\'ll look at your processes and tell you honestly what AI can — and can\'t — do for your business.',
       placeholder: 'your@email.com',
       phone_placeholder: '+31 / +38 ...',
+      message_placeholder: 'How can we help? (optional)',
       email_label: 'Email address',
       phone_label: 'Phone number',
+      message_label: 'Message',
       btn: 'Book free call'
     },
     contact: {
@@ -367,8 +369,10 @@ window.i18n = {
       sub: 'Запишіться на безкоштовний 30-хвилинний дзвінок. Подивимось на ваші процеси і чесно скажемо що AI може — і чого не може — зробити для вашого бізнесу.',
       placeholder: 'ваш@email.com',
       phone_placeholder: '+38 ...',
+      message_placeholder: 'Чим ми можеш вам допомогти?',
       email_label: 'Електронна пошта',
       phone_label: 'Номер телефону',
+      message_label: 'Повідомлення',
       btn: 'Записатись на дзвінок'
     },
     contact: {
