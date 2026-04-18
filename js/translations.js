@@ -171,6 +171,11 @@ window.i18n = {
         h1: 'Book Your Free AI Automation Audit',
         sub: '30-minute call. We will look at your processes and tell you honestly what AI can — and cannot — do for your business. No pitch, no pressure.'
       },
+      privacy: {
+        h1: 'Privacy Policy',
+        meta: 'Effective Date: 18 April 2026 · Last Updated: 18 April 2026',
+        disclaimer: 'This Privacy Policy is provided as a general template for informational purposes. For legally binding advice regarding your specific situation, consult with a qualified data-protection lawyer in your jurisdiction.'
+      },
       aiIntegrations: {
         breadcrumbCurrent: 'AI Integrations',
         hero: {
@@ -430,6 +435,11 @@ window.i18n = {
         breadcrumbCurrent: 'Контакти',
         h1: 'Записатись на безкоштовний AI-аудит',
         sub: '30-хвилинний дзвінок. Подивимось на ваші процеси і чесно скажемо, що AI може — і чого не може — зробити для вашого бізнесу. Без продажу, без тиску.'
+      },
+      privacy: {
+        h1: 'Політика конфіденційності',
+        meta: 'Дата набрання чинності: 18 квітня 2026 · Останнє оновлення: 18 квітня 2026',
+        disclaimer: 'Ця Політика конфіденційності надається як загальний шаблон виключно для інформаційних цілей. Для юридично обов\'язкової консультації щодо вашої конкретної ситуації проконсультуйтесь з кваліфікованим юристом з питань захисту даних у вашій юрисдикції.'
       },
       aiIntegrations: {
         breadcrumbCurrent: 'AI-інтеграції',

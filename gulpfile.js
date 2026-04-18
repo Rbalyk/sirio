@@ -76,7 +76,10 @@ function sitemap(cb) {
 
   const urls = all.map(p => {
     const isHome = p.loc === SITE + '/' || p.loc === SITE + '/ua/';
-    const priority = isHome ? (p.loc === SITE + '/' ? '1.0' : '0.9') : '0.8';
+    const isLegal = /\/(privacy-policy|terms|cookies)\/$/.test(p.loc);
+    const priority = isHome
+      ? (p.loc === SITE + '/' ? '1.0' : '0.9')
+      : (isLegal ? '0.3' : '0.8');
     const pair = pairFor(p.loc);
     const hasPair = p.loc.startsWith(SITE + '/ua/') ? enLocs.has(pair) : uaLocs.has(pair);
 
