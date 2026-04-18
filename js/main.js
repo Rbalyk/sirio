@@ -164,6 +164,12 @@
     return path.startsWith('/ua') ? 'ua' : 'en';
   }
 
+  // ── Copyright year (keeps footer fresh without manual updates) ─
+  function updateCopyrightYear() {
+    var el = document.getElementById('current-year');
+    if (el) el.textContent = new Date().getFullYear();
+  }
+
   // ── FAQ accordion ─────────────────────────────────────────
   function initFaq() {
     document.querySelectorAll('.faq-question').forEach(function (btn) {
@@ -200,5 +206,6 @@
     initReveal();
     initForm();
     initFaq();
+    updateCopyrightYear();
   });
 })();

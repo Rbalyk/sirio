@@ -161,10 +161,11 @@ window.i18n = {
         legal: {
           title: 'Legal',
           privacy: 'Privacy Policy',
-          terms: 'Terms of Service',
+          terms: 'Terms & Conditions',
           cookies: 'Cookie Policy'
         }
-      }
+      },
+      copyright: '&copy; <span id="current-year"></span> Sirio Agency. All rights reserved.'
     },
 
     pages: {
@@ -177,6 +178,124 @@ window.i18n = {
         h1: 'Privacy Policy',
         meta: 'Effective Date: 18 April 2026 · Last Updated: 18 April 2026',
         disclaimer: 'This Privacy Policy is provided as a general template for informational purposes. For legally binding advice regarding your specific situation, consult with a qualified data-protection lawyer in your jurisdiction.'
+      },
+      terms: {
+        h1: 'Terms & Conditions',
+        meta: 'Effective Date: 18 April 2026 · Last Updated: 18 April 2026',
+        partA: {
+          h2: 'Part A — Terms of Use',
+          intro: 'This part applies to every visitor of sirio.agency. By opening the site you accept these Terms of Use.',
+          sections: [
+            {
+              h2: 'A.1 Introduction',
+              p1: 'This part governs the use of the sirio.agency website and applies automatically whenever you open the site. It does not create a commercial relationship on its own.',
+              p2: 'Operator: <strong>Sirio Agency</strong>, Lviv, Ukraine. For any question regarding these Terms, contact <a href="mailto:legal@sirio.agency">legal@sirio.agency</a> (fallback: <a href="mailto:privacy@sirio.agency">privacy@sirio.agency</a>).'
+            },
+            {
+              h2: 'A.2 Acceptance of Terms',
+              p1: 'By accessing or using sirio.agency you agree to these Terms. If you do not agree with any part of them, please stop using the site.'
+            },
+            {
+              h2: 'A.3 Permitted Use',
+              p1: 'You are welcome to browse our content and to submit inquiries through the Contact form for legitimate business purposes.',
+              p2: 'You may not:',
+              li1: 'scrape, crawl, or mirror the site using automated tools without prior written permission;',
+              li2: 'reverse engineer, decompile, or attempt to extract source code or internal logic;',
+              li3: 'collect personal data of our team or visitors through any automated means;',
+              li4: 'attempt to disrupt, overload, or attack the infrastructure serving the site.'
+            },
+            {
+              h2: 'A.4 Intellectual Property',
+              p1: 'All content on the site — text, code, design, logo, and overall structure — is the property of Sirio Agency and is protected by copyright and related rights.',
+              p2: 'You may not copy, republish, or reuse material from the site without our prior written permission. Limited exceptions apply under fair use: short quotations with attribution, research, and commentary.',
+              p3: 'Third-party brand names and logos mentioned on the site (e.g. OpenAI, Anthropic, Slack, HubSpot, Salesforce, Cloudflare) are the property of their respective owners and are referenced for descriptive purposes only.'
+            },
+            {
+              h2: 'A.5 Third-Party Links',
+              p1: 'The site may contain links to third-party resources such as vendor documentation, product pages, or partner websites. We do not control those sites and are not responsible for their content, accuracy, or privacy practices. You follow external links at your own risk.'
+            },
+            {
+              h2: 'A.6 Disclaimer of Warranties',
+              p1: 'The site is provided on an "AS IS" and "AS AVAILABLE" basis, without warranties of any kind, express or implied. We do not guarantee uninterrupted operation, absence of errors, or absolute security. We aim for maximum uptime through Cloudflare and reasonable security measures, but we do not promise 100% availability.'
+            }
+          ]
+        },
+        partB: {
+          h2: 'Part B — Terms of Service',
+          intro: 'This part applies when you engage Sirio to deliver professional services. It is the baseline framework for the commercial relationship between us and our clients.',
+          sections: [
+            {
+              h2: 'B.1 Scope',
+              p1: 'Part B governs the relationship between Sirio and clients who engage us for services. Our services include AI integration, consulting, automation, and custom AI solutions.',
+              p2: 'Each project is documented in a separate written <strong>Statement of Work (SoW)</strong>, which defines the specific scope, deliverables, timeline, and pricing. If there is any conflict between these Terms and an SoW signed by both parties, the <strong>SoW takes precedence</strong>.'
+            },
+            {
+              h2: 'B.2 Services',
+              p1: 'We deliver AI integrations, LLM consulting, chatbots, workflow automation, AI agents, and CRM integrations. Each engagement is scoped to a specific set of deliverables and a clear timeline, defined in the SoW before work begins.'
+            },
+            {
+              h2: 'B.3 Engagement & Payment',
+              p1: 'Payment terms are defined in each SoW. Typical structures:',
+              li1: 'Fixed-price projects: 50% upfront, 50% on completion.',
+              li2: 'Retainer engagements: monthly invoicing, payable within the period stated in the SoW.',
+              p2: 'Invoices are issued in EUR or USD, as agreed per project. Payment terms longer than 30 days overdue may result in a pause on work and a late fee as stated in the SoW.'
+            },
+            {
+              h2: 'B.4 Client Responsibilities',
+              p1: 'To deliver on schedule, we rely on the client to:',
+              li1: 'provide timely access to systems, data, and API credentials through a secure channel;',
+              li2: 'designate a responsible point of contact for decisions and approvals;',
+              li3: 'respond to milestones, reviews, and questions within five (5) business days.',
+              p2: 'Delays caused by the client will result in a proportional shift of the project timeline.'
+            },
+            {
+              h2: 'B.5 Intellectual Property & Deliverables',
+              p1: 'Code, configurations, and documentation produced specifically for the client under an SoW transfer to the client upon full payment of the corresponding invoice.',
+              p2: '<strong>Exceptions:</strong> our pre-existing tools, frameworks, templates, and reusable components remain our property. The client receives a perpetual, non-exclusive, royalty-free licence to use those components as embedded in the delivered work.',
+              p3: 'Third-party tools and services (e.g. OpenAI API, Anthropic API, Cloudflare, Pinecone) have their own licences and terms. The client contracts directly with those vendors and is responsible for their usage and fees.'
+            },
+            {
+              h2: 'B.6 Confidentiality',
+              p1: 'Both parties agree to keep confidential any non-public commercial, technical, or business information received from the other party in connection with the engagement. This obligation applies for three (3) years after the end of the engagement.',
+              p2: 'Confidentiality does not apply to information that is publicly available, independently developed without use of confidential information, or required to be disclosed by law.'
+            },
+            {
+              h2: 'B.7 Warranties & Limitation of Liability',
+              p1: 'We warrant that our services will be performed professionally, with reasonable skill and care, and in line with industry practice.',
+              p2: 'We do not warrant any specific business outcome — such as a particular increase in revenue, defined cost savings, or a specific conversion rate — as these depend on factors outside our control.',
+              p3: 'Our total liability under any engagement is limited to the <strong>fees paid for that specific project</strong> (or, for retainer engagements, the fees paid for the preceding three (3) months). We are not liable for indirect, consequential, or special damages, including lost profits, lost opportunities, or reputational harm.'
+            },
+            {
+              h2: 'B.8 Data Processing & GDPR',
+              p1: 'If, in the course of an engagement, we process personal data belonging to the client or its end-users, we enter into a separate Data Processing Agreement (DPA) that sets out roles, security measures, sub-processors, and data-subject rights in line with the EU GDPR.',
+              p2: 'A standard DPA template is available on request at <a href="mailto:legal@sirio.agency">legal@sirio.agency</a>.'
+            },
+            {
+              h2: 'B.9 Termination',
+              p1: 'Either party may terminate the engagement by giving thirty (30) days\' written notice to the other party.',
+              p2: 'Either party may terminate with immediate effect for material breach — including non-payment of an invoice more than sixty (60) days overdue, or a material breach of confidentiality.',
+              p3: 'On termination, we invoice for all work completed up to the termination date and hand over the corresponding deliverables once that invoice is settled.'
+            },
+            {
+              h2: 'B.10 Governing Law & Disputes',
+              p1: 'These Terms and any engagement under them are governed by the law of Ukraine.',
+              p2: 'The parties will first attempt to resolve any dispute through good-faith negotiation within thirty (30) days of a written notice of dispute.',
+              p3: 'If no amicable resolution is reached: for international clients, disputes are referred to the International Commercial Arbitration Court at the Ukrainian Chamber of Commerce and Industry; for Ukrainian clients, disputes fall under the jurisdiction of the competent courts of Lviv, Ukraine.'
+            }
+          ]
+        },
+        general: {
+          changes: {
+            h2: 'Changes to These Terms',
+            p1: 'We may update these Terms from time to time. The "Last Updated" date at the top of the page reflects the most recent revision. Continued use of the site or continued engagement after an update means you accept the updated Terms. Material changes will be highlighted through a notice on the site or, for active clients, by email.'
+          },
+          contact: {
+            h2: 'Contact',
+            p1: 'Legal queries: <a href="mailto:legal@sirio.agency">legal@sirio.agency</a> (fallback: <a href="mailto:privacy@sirio.agency">privacy@sirio.agency</a>).',
+            p2: 'Business inquiries: <a href="/contact-us/">contact page</a>.'
+          }
+        },
+        disclaimer: 'These Terms are provided as a general template for informational purposes. For contracts involving significant business value or specific legal risks, consult with a qualified commercial lawyer in your jurisdiction. Client-specific Statements of Work (SoW) take precedence over these general Terms.'
       },
       aiIntegrations: {
         breadcrumbCurrent: 'AI Integrations',
@@ -428,10 +547,11 @@ window.i18n = {
         legal: {
           title: 'Правова інформація',
           privacy: 'Політика конфіденційності',
-          terms: 'Умови використання',
+          terms: 'Умови користування',
           cookies: 'Cookie політика'
         }
-      }
+      },
+      copyright: '&copy; <span id="current-year"></span> Sirio Agency. Усі права захищені.'
     },
 
     pages: {
@@ -444,6 +564,124 @@ window.i18n = {
         h1: 'Політика конфіденційності',
         meta: 'Дата набрання чинності: 18 квітня 2026 · Останнє оновлення: 18 квітня 2026',
         disclaimer: 'Ця Політика конфіденційності надається як загальний шаблон виключно для інформаційних цілей. Для юридично обов\'язкової консультації щодо вашої конкретної ситуації проконсультуйтесь з кваліфікованим юристом з питань захисту даних у вашій юрисдикції.'
+      },
+      terms: {
+        h1: 'Умови користування',
+        meta: 'Дата набрання чинності: 18 квітня 2026 · Останнє оновлення: 18 квітня 2026',
+        partA: {
+          h2: 'Частина A — Умови використання сайту',
+          intro: 'Ця частина застосовується до кожного відвідувача sirio.agency. Відкриваючи сайт, ви погоджуєтесь з цими Умовами використання.',
+          sections: [
+            {
+              h2: 'A.1 Вступ',
+              p1: 'Ця частина регулює використання веб-сайту sirio.agency і застосовується автоматично при відкритті сайту. Сама по собі вона не створює комерційних відносин.',
+              p2: 'Оператор: <strong>Sirio Agency</strong>, Львів, Україна. З питань, що стосуються цих Умов, звертайтесь на <a href="mailto:legal@sirio.agency">legal@sirio.agency</a> (резервна адреса: <a href="mailto:privacy@sirio.agency">privacy@sirio.agency</a>).'
+            },
+            {
+              h2: 'A.2 Прийняття Умов',
+              p1: 'Використовуючи сайт sirio.agency, ви погоджуєтесь з цими Умовами. Якщо ви не згодні з будь-якою їх частиною — припиніть користування сайтом.'
+            },
+            {
+              h2: 'A.3 Дозволене використання',
+              p1: 'Ви можете переглядати контент сайту і надсилати запити через контактну форму для легітимних ділових цілей.',
+              p2: 'Забороняється:',
+              li1: 'здійснювати scraping, crawling чи дзеркалювання сайту автоматизованими засобами без письмового дозволу;',
+              li2: 'проводити reverse engineering, декомпіляцію чи спроби отримати вихідний код або внутрішню логіку;',
+              li3: 'збирати персональні дані команди чи відвідувачів за допомогою будь-яких автоматизованих засобів;',
+              li4: 'здійснювати спроби порушити роботу, перевантажити або атакувати інфраструктуру сайту.'
+            },
+            {
+              h2: 'A.4 Інтелектуальна власність',
+              p1: 'Весь контент сайту — тексти, код, дизайн, логотип і загальна структура — є власністю Sirio Agency і охороняється авторським правом та суміжними правами.',
+              p2: 'Копіювання, повторна публікація чи повторне використання матеріалів сайту без нашого попереднього письмового дозволу заборонені. Допускаються обмежені винятки у рамках fair use: короткі цитати з атрибуцією, research і коментарі.',
+              p3: 'Назви та логотипи третіх сторін, згадані на сайті (наприклад, OpenAI, Anthropic, Slack, HubSpot, Salesforce, Cloudflare), є власністю відповідних компаній і згадуються виключно для описових цілей.'
+            },
+            {
+              h2: 'A.5 Посилання на треті сторони',
+              p1: 'Сайт може містити посилання на сторонні ресурси — документацію вендорів, продуктові сторінки або сайти партнерів. Ми не контролюємо ці сайти і не відповідаємо за їхній контент, точність чи практики конфіденційності. Перехід за зовнішніми посиланнями — на ваш ризик.'
+            },
+            {
+              h2: 'A.6 Відмова від гарантій',
+              p1: 'Сайт надається на засадах «AS IS» та «AS AVAILABLE», без жодних гарантій, прямих чи прихованих. Ми не гарантуємо безперервну роботу, відсутність помилок або абсолютну безпеку. Ми прагнемо максимального uptime через Cloudflare і розумних заходів безпеки, але не обіцяємо 100% доступності.'
+            }
+          ]
+        },
+        partB: {
+          h2: 'Частина B — Умови надання послуг',
+          intro: 'Ця частина застосовується, коли ви залучаєте Sirio до надання професійних послуг. Вона є базовим framework\'ом комерційних відносин між нами і нашими клієнтами.',
+          sections: [
+            {
+              h2: 'B.1 Сфера дії',
+              p1: 'Частина B регулює відносини між Sirio і клієнтами, які замовляють наші послуги. Наші послуги охоплюють AI-інтеграції, консалтинг, автоматизацію та кастомні AI-рішення.',
+              p2: 'Кожен проєкт оформлюється окремим письмовим <strong>Statement of Work (SoW)</strong>, який визначає конкретний обсяг, deliverables, таймлайн і вартість. У разі розбіжностей між цими Умовами і SoW, підписаним обома Сторонами, <strong>SoW має пріоритет</strong>.'
+            },
+            {
+              h2: 'B.2 Послуги',
+              p1: 'Ми надаємо AI-інтеграції, LLM-консалтинг, чат-боти, автоматизацію workflow, AI-агентів і CRM-інтеграції. Кожен проєкт має чітко визначений перелік deliverables і таймлайн, які фіксуються у SoW до початку робіт.'
+            },
+            {
+              h2: 'B.3 Замовлення та оплата',
+              p1: 'Умови оплати визначаються у кожному SoW. Типові схеми:',
+              li1: 'Fixed-price проєкти: 50% передоплати, 50% після завершення.',
+              li2: 'Retainer-формат: місячне виставлення рахунків, оплата протягом періоду, вказаного у SoW.',
+              p2: 'Рахунки виставляються у EUR або USD, конкретна валюта узгоджується у SoW. Прострочення оплати понад 30 днів може призвести до призупинення робіт і нарахування пені у розмірі, визначеному SoW.'
+            },
+            {
+              h2: 'B.4 Обов\'язки Клієнта',
+              p1: 'Для дотримання таймлайну ми очікуємо від Клієнта:',
+              li1: 'своєчасного надання доступів до систем, даних і API credentials безпечним каналом;',
+              li2: 'призначення відповідальної контактної особи для рішень і погоджень;',
+              li3: 'реакції на milestones, review і запити протягом п\'яти (5) робочих днів.',
+              p2: 'Затримки з боку Клієнта призводять до пропорційного зміщення таймлайну проєкту.'
+            },
+            {
+              h2: 'B.5 Інтелектуальна власність і deliverables',
+              p1: 'Код, конфігурації та документація, створені спеціально для Клієнта у рамках SoW, переходять у власність Клієнта після повної оплати відповідного рахунку.',
+              p2: '<strong>Винятки:</strong> наші pre-existing інструменти, frameworks, шаблони та reusable-компоненти залишаються нашою власністю. Клієнт отримує безстрокову, невиключну, безоплатну ліцензію на використання цих компонентів у складі переданої роботи.',
+              p3: 'Сторонні інструменти та сервіси (наприклад, OpenAI API, Anthropic API, Cloudflare, Pinecone) мають власні ліцензії та умови. Клієнт укладає договори з такими вендорами безпосередньо і несе відповідальність за використання та оплату.'
+            },
+            {
+              h2: 'B.6 Конфіденційність',
+              p1: 'Обидві Сторони зобов\'язуються зберігати конфіденційність непублічної комерційної, технічної та ділової інформації, отриманої від іншої Сторони у зв\'язку з виконанням робіт. Це зобов\'язання діє протягом трьох (3) років після завершення співпраці.',
+              p2: 'Конфіденційність не поширюється на інформацію, яка: є публічно доступною; розроблена незалежно без використання конфіденційної інформації; підлягає розкриттю відповідно до закону.'
+            },
+            {
+              h2: 'B.7 Гарантії та обмеження відповідальності',
+              p1: 'Ми гарантуємо, що наші послуги будуть надаватися професійно, з розумною кваліфікацією та старанністю, відповідно до галузевих практик.',
+              p2: 'Ми не гарантуємо досягнення конкретних бізнес-результатів — таких як певне зростання доходу, визначена економія витрат або конкретний conversion rate, — оскільки вони залежать від факторів поза нашим контролем.',
+              p3: 'Наша максимальна сукупна відповідальність за будь-яким проєктом обмежується <strong>сумою, сплаченою за цей конкретний проєкт</strong> (для retainer-формату — сумою, сплаченою за попередні три (3) місяці). Ми не відповідаємо за непрямі, побічні чи спеціальні збитки, включно з упущеною вигодою, втраченими можливостями або репутаційною шкодою.'
+            },
+            {
+              h2: 'B.8 Обробка даних і GDPR',
+              p1: 'Якщо під час виконання робіт ми обробляємо персональні дані Клієнта або його кінцевих користувачів, Сторони укладають окремий Data Processing Agreement (DPA), який визначає ролі, заходи безпеки, sub-processors і права субʼєктів даних відповідно до GDPR ЄС.',
+              p2: 'Стандартний шаблон DPA надається за запитом на <a href="mailto:legal@sirio.agency">legal@sirio.agency</a>.'
+            },
+            {
+              h2: 'B.9 Припинення',
+              p1: 'Будь-яка зі Сторін може припинити співпрацю шляхом письмового повідомлення іншої Сторони за тридцять (30) днів.',
+              p2: 'Будь-яка зі Сторін може припинити співпрацю негайно у разі істотного порушення — зокрема неоплати рахунку понад шістдесят (60) днів або істотного порушення конфіденційності.',
+              p3: 'Після припинення ми виставляємо рахунок за виконану на дату припинення роботу і передаємо відповідні deliverables після оплати цього рахунку.'
+            },
+            {
+              h2: 'B.10 Застосовне право та вирішення спорів',
+              p1: 'Ці Умови та будь-який проєкт у їх рамках регулюються законодавством України.',
+              p2: 'Сторони спочатку намагатимуться вирішити будь-який спір шляхом сумлінних переговорів протягом тридцяти (30) днів з дати письмового повідомлення про спір.',
+              p3: 'Якщо amicable resolution не досягнуто: для міжнародних клієнтів спори передаються до Міжнародного комерційного арбітражного суду при ТПП України; для українських клієнтів спори підлягають розгляду у компетентних судах м. Львова, Україна.'
+            }
+          ]
+        },
+        general: {
+          changes: {
+            h2: 'Зміни до цих Умов',
+            p1: 'Ми можемо час від часу оновлювати ці Умови. Дата «Останнє оновлення» вгорі сторінки відображає найсвіжішу редакцію. Продовжене використання сайту або продовження співпраці після оновлення означає вашу згоду з оновленими Умовами. Про суттєві зміни ми повідомимо через сайт або, для активних клієнтів, електронним листом.'
+          },
+          contact: {
+            h2: 'Контакти',
+            p1: 'Юридичні запити: <a href="mailto:legal@sirio.agency">legal@sirio.agency</a> (резервна адреса: <a href="mailto:privacy@sirio.agency">privacy@sirio.agency</a>).',
+            p2: 'Ділові запити: <a href="/ua/contact-us/">сторінка контактів</a>.'
+          }
+        },
+        disclaimer: 'Ці Умови надаються як загальний шаблон виключно для інформаційних цілей. Для договорів зі значною бізнес-вартістю або специфічними юридичними ризиками рекомендуємо проконсультуватися з кваліфікованим комерційним юристом у вашій юрисдикції. Індивідуальні Statements of Work (SoW) клієнта мають пріоритет над цими загальними Умовами.'
       },
       aiIntegrations: {
         breadcrumbCurrent: 'AI-інтеграції',

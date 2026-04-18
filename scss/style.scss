@@ -1101,6 +1101,19 @@ h1, h2, h3, h4 {
       }
     }
   }
+
+  .footer-bottom {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(#fff, .1);
+    text-align: center;
+  }
+
+  .copyright {
+    font-size: .85rem;
+    color: rgba(#fff, .55);
+    margin: 0;
+  }
 }
 
 // ── Mobile lang switcher ─────────────────────────────────────
